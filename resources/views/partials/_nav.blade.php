@@ -5,20 +5,20 @@
 			<div class="col-md-5">
 				<nav class="nav-bar-left">
 					<ul class="text-uppercase font-weight-bold">
-						<li class="nav-item active">
-							<a class="nav-link" href="javascript:void(0)">Home</a>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url('/') }}">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="javascript:void(0)">Über uns</a>
+							<a class="nav-link" href="{{ url('about_us') }}">Über uns</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="javascript:void(0)">Dienstleistungen</a>
+							<a class="nav-link" href="{{ url('services') }}">Dienstleistungen</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class="col-md-2 text-md-center">
-				<a class="logo-link" href="javascript:void(0)">
+				<a class="logo-link" href="{{ url('/') }}">
 					<img src="{{ asset('img/logo.png') }}" class="logo" title="S.W.A. Security" alt="img/logo.png" />
 				</a>
 			</div>
@@ -26,16 +26,16 @@
 				<nav class="nav-bar-right">
 					<ul class="text-uppercase font-weight-bold">
 						<li class="nav-item">
-							<a class="nav-link" href="javascript:void(0)">Referenzen</a>
+							<a class="nav-link" href="{{ url('references') }}">Referenzen</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="javascript:void(0)">Partner</a>
+							<a class="nav-link" href="{{ url('partner') }}">Partner</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="javascript:void(0)">Jobs</a>
+							<a class="nav-link" href="{{ url('jobs') }}">Jobs</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="javascript:void(0)">Kontakt</a>
+							<a class="nav-link" href="{{ url('contact') }}">Kontakt</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -29,15 +29,15 @@ $(document).ready(function () {
 });
 
 function openNav() {
-	document.getElementById("mySidenav").style.width = "70%";
+	document.getElementById("side-nav").style.width = "70%";
 	document.body.style.overflowY = "hidden";
-	document.getElementById("sidenav").style.visibility = "hidden";
-	document.getElementById("sidenav").style.opacity = "0";
+	document.getElementById("top-menu").style.visibility = "hidden";
+	document.getElementById("top-menu").style.opacity = "0";
 }
 
 function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("side-nav").style.width = "0";
 	document.body.style.overflowY = "auto";
-	document.getElementById("sidenav").style.visibility = "visible";
-	document.getElementById("sidenav").style.opacity = "1";
+	document.getElementById("top-menu").style.visibility = "visible";
+	document.getElementById("top-menu").style.opacity = "1";
 }

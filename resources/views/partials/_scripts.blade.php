@@ -1,0 +1,1 @@
+<script src="{{ asset('js/main.js?ver=' . str_random(10)) }}"></script>

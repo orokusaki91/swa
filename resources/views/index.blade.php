@@ -2,14 +2,8 @@
 
 @section('title', 'Home')
 
-@section('styles')
-
-@stop
-
 @section('content')
-
-@stop
-
-@section('scripts')
-
+	<div class="container">
+		Hello world!
+	</div>
 @stop

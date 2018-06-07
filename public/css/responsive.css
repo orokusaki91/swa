@@ -1,0 +1,109 @@
+/* Media queries */
+
+/*---------------------------------------------------------------------
+@media only screen and (max-width: 319px) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 319px) {
+	header {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (max-width: 319px) end
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 320px) and (max-width: 767px) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	header {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 320px) and (max-width: 767px) end
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 320px) and (max-width: 767px) 
+and (orientation: landscape) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	header {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 320px) and (max-width: 767px) 
+and (orientation: landscape) end
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 768px) and (max-width: 1024px) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	#sidenav,
+	#mySidenav {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 768px) and (max-width: 1024px) end
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 768px) and (max-width: 1024px) 
+and (orientation: landscape) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	#sidenav,
+	#mySidenav {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 768px) and (max-width: 1024px) 
+and (orientation: landscape) end
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 1025px) and (max-width: 1366px) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	#sidenav,
+	#mySidenav {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 1025px) and (max-width: 1366px) end
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 1025px) and (max-width: 1366px) 
+and (orientation: landscape) start
+-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+	#sidenav,
+	#mySidenav {
+		display: none;
+	}
+}
+
+/*---------------------------------------------------------------------
+@media only screen and (min-width: 1025px) and (max-width: 1366px) 
+and (orientation: landscape) end
+-----------------------------------------------------------------------*/

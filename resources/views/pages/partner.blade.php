@@ -3,6 +3,11 @@
 @section('title', 'Partner')
 
 @section('content')
-<div class="container">
+<!-- Partner start -->
+<div id="partner">
+	<div class="container">
+		
+	</div>
 </div>
+<!-- Partner end -->
 @stop

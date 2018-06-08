@@ -3,6 +3,11 @@
 @section('title', 'References')
 
 @section('content')
-<div class="container">
+<!-- References start -->
+<div id="references">
+	<div class="container">
+		
+	</div>
 </div>
+<!-- References end -->
 @stop

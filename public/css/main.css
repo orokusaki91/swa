@@ -3,9 +3,9 @@
 html,
 body {
 	width: 100%;
-	min-width: 250px;
 	height: 100%;
-	margin: 0 auto;
+	min-width: 250px;
+	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	background: url('../img/background.png') 55% center no-repeat;
@@ -42,6 +42,10 @@ img {
 	height: auto;
 }
 
+svg {
+	font-size: 18px !important;
+}
+
 /*--------------------------------------------------------------------------------------------
     Side-nav start
 -----------------------------*/
@@ -55,7 +59,7 @@ img {
 	z-index: 999;
 	background-color: #4B5320;
 	overflow-x: auto;
-	transition: all .5s linear;
+	transition: all .2s linear;
 	-webkit-box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
 	box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
@@ -83,6 +87,7 @@ img {
 }
 
 #side-nav ul li a {
+	text-transform: uppercase;
 	padding: 5px 0;
 	padding-left: 40px;
 	font-size: 20px;
@@ -92,7 +97,7 @@ img {
 }
 
 #side-nav ul li a.active {
-	color: #00AFE5;
+	color: #000000;
 	font-weight: bold;
 }
 
@@ -110,8 +115,7 @@ img {
 
 #top-menu {
 	background-color: #4B5320;
-	padding: 15px 20px;
-	padding-bottom: 14px;
+	padding: 15px;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -193,13 +197,7 @@ header ul {
 	font-size: 16px;
 }
 
-header .nav-bar-left .nav-item {
-	float: left;
-	display: inline-block;
-}
-
-header .nav-bar-right .nav-item {
-	float: none;
+header .nav-bar .nav-item {
 	display: inline-block;
 }
 
@@ -327,7 +325,7 @@ header .dropdown-item:hover:not(.active) {
 	background-color: transparent;
 	border: 2px solid #4B5320;
 	transition: all .3s ease;
-	padding: 3px 12px;
+	padding: 4px 12px 2px;
 }
 
 #home #btn-seeAll:hover,
@@ -384,11 +382,13 @@ header .dropdown-item:hover:not(.active) {
     Contact start
 -----------------------------*/
 
+#contact {
+	margin-top: 50px;
+}
+
 #contact form {
 	background-color: #f2f2f2;
-	padding: 20px;
-	margin-top: 50px;
-	border: 1px solid #000000;
+	padding: 25px 10px;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
@@ -415,7 +415,7 @@ header .dropdown-item:hover:not(.active) {
 
 #contact .form-control {
 	border-radius: 0;
-	padding: 8px 10px 6px;
+	padding: 8px 10px 5px;
 }
 
 #contact .input-group-text {
@@ -438,15 +438,25 @@ header .dropdown-item:hover:not(.active) {
 	width: 100%;
 	background-color: #4B5320;
 	border: none;
-	padding: 10px 10px 9px;
+	padding: 10px 10px 8px;
 	letter-spacing: 1px;
 	font-weight: 500;
 	text-transform: uppercase;
 	border-radius: 0;
+	transition: all .5s ease;
+	margin-top: 10px;
 }
 
 #contact #btn-submit:hover {
-	background-color: #43491d;
+	background-color: #646e2b;
+}
+
+#contact #map {
+	height: 100%;
+	background-color: #f2f2f2;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
 /*----------------------------
@@ -458,7 +468,7 @@ header .dropdown-item:hover:not(.active) {
 -----------------------------*/
 
 footer {
-	padding-bottom: 30px;
+	padding: 30px 0;
 }
 
 footer .social a {
@@ -503,8 +513,8 @@ footer #instagram:hover {
 
 #back-to-top {
 	position: fixed;
-	bottom: 40px;
-	right: 15px;
+	bottom: 90px;
+	right: 25px;
 	width: 40px;
 	height: 40px;
 	z-index: 999;
@@ -518,13 +528,13 @@ footer #instagram:hover {
 	opacity: 0;
 }
 
+#back-to-top:hover {
+	background-color: #646e2b;
+}
+
 .show-back-to-top {
 	visibility: visible !important;
 	opacity: 1 !important;
-}
-
-#back-to-top:hover {
-	opacity: 0.8 !important;
 }
 
 /*----------------------------
@@ -567,7 +577,7 @@ footer #instagram:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 	#app {
-		padding-top: 54px;
+		padding-top: 55px;
 	}
 	header {
 		display: none;
@@ -610,6 +620,18 @@ footer #instagram:hover {
 	#side-nav {
 		display: none;
 	}
+	header ul {
+		font-size: 14px;
+	}
+	header .nav-item a {
+		padding: 7px 10px 5px;
+	}
+	header .language {
+		width: 18px;
+	}
+	header .logo {
+		margin-top: 30px;
+	}
 }
 
 /*---------------------------------------------------------------------
@@ -625,6 +647,13 @@ footer #instagram:hover {
 	#side-nav {
 		display: none;
 	}
+	header ul {
+		font-size: 15px;
+	}
+
+	header .nav-item a {
+		padding: 7px 10px 5px;
+	}
 }
 
 /*---------------------------------------------------------------------
@@ -632,33 +661,47 @@ footer #instagram:hover {
 --------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) start
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
 -----------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
 	#top-menu,
 	#side-nav {
 		display: none;
 	}
+	header ul {
+		font-size: 15px;
+	}
+
+	header .nav-item a {
+		padding: 7px 10px 5px;
+	}
 }
 
 /*---------------------------------------------------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) end
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
 --------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) start
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
 -----------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 	#top-menu,
 	#side-nav {
 		display: none;
 	}
+	header ul {
+		font-size: 16px;
+	}
+
+	header .nav-item a {
+		padding: 7px 15px 5px;
+	}
 }
 
 /*---------------------------------------------------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) end
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
 --------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------

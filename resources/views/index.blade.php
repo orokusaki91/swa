@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-<!-- Content start -->
+<!-- Home start -->
 <div id="home">
 	<div class="container">
 		<div class="row">
@@ -16,5 +16,5 @@
 		</div>
 	</div>
 </div>
-		<!-- Content end -->
+<!-- Home end -->
 @stop

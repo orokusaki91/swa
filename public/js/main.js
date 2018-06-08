@@ -29,7 +29,12 @@ $(document).ready(function () {
 });
 
 function openNav() {
-	document.getElementById("side-nav").style.width = "70%";
+	var media = window.matchMedia("only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape)");
+	if (media.matches) { // If media query matches
+		document.getElementById("side-nav").style.width = "65%";
+	} else {
+		document.getElementById("side-nav").style.width = "70%";
+	}
 	document.body.style.overflowY = "hidden";
 	document.getElementById("top-menu").style.visibility = "hidden";
 	document.getElementById("top-menu").style.opacity = "0";
@@ -40,4 +45,16 @@ function closeNav() {
 	document.body.style.overflowY = "auto";
 	document.getElementById("top-menu").style.visibility = "visible";
 	document.getElementById("top-menu").style.opacity = "1";
+}
+
+var map;
+
+function initMap() {
+	map = new google.maps.Map(document.getElementById("map"), {
+		center: {
+			lat: 38.906659,
+			lng: 1.420721
+		},
+		zoom: 10
+	});
 }

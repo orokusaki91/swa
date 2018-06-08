@@ -3,6 +3,11 @@
 @section('title', 'About Us')
 
 @section('content')
-<div class="container">
+<!-- About us start -->
+<div id="about-us">
+	<div class="container">
+		
+	</div>
 </div>
+<!-- About us end -->
 @stop

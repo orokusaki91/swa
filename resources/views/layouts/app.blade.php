@@ -42,11 +42,15 @@
 		<!-- Language mobile end -->
 	</div>
 	<!-- Sidenav end -->
+	<!-- App start -->
 	<div id="app">
 		@include('partials._nav')
 		@yield('content')
+		<!-- Push-footer start -->
 		<div class="push-footer"></div>
+		<!-- Push-footer end -->
 	</div>
+	<!-- App end -->
 	@include('partials._footer')
 </body>
 

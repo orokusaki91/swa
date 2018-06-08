@@ -9,10 +9,10 @@
 <meta name="msapplication-navbutton-color" content="#4B5320" />
 <meta name="apple-mobile-web-app-status-bar-style" content="#4B5320" />
 <!-- Meta tag end-->
-<title>Swa | @yield('title')</title>
+<title>S.W.A. Security | @yield('title')</title>
 <!-- Favicon start -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 <!-- Favicon end -->
 <!-- CSS and Bootstrap 4 links start -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/plugins-css.css') }}" />

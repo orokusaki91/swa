@@ -7,12 +7,14 @@
 <div id="jobs">
 	<div class="container">
 		<h2 class="text-uppercase text-center">Looking for a job?</h2>
-		<p class="text-uppercase text-center">There's no better place to start</p>
-		<div class="scroll-down text-center">
-			<button id="btn-scroll">
-				<i class="fas fa-chevron-down"></i>
-			</button>
-			<div class="tooltip-show">Sroll down</div>
+		<p class="text-uppercase text-center place">There's no better place to start</p>
+		<div class="text-center">
+			<div class="tooltip-div text-center">
+				<button id="btn-scroll" class="animated slideInDown infinite">
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="tooltip-text">Scroll down</div>
+			</div>
 		</div>
 	</div>
 	<div class="jobs-background">
@@ -22,78 +24,81 @@
 				</p>
 				<h2 class="text-center mt-5">Open positions</h2>
 				<p>Here you can apply for any of currently open positions.</p>
-				<h6 class="mt-5">Lorem ipsum</h6>
-				<ul>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-				</ul>
-				<h6 class="mt-5">Lorem ipsum</h6>
-				<ul>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-				</ul>
-				<h6 class="mt-5">Lorem ipsum</h6>
-				<ul>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-				</ul>
-				<h6 class="mt-5">Lorem ipsum</h6>
-				<ul>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-					<li>
-						<a>Lorem Ipsum</a>
-					</li>
-				</ul>
+				<div class="positions">
+					<div class="row">
+						<div class="col-md-6 text-md-center">
+							<h6 class="mt-5">Lorem ipsum (5):</h6>
+							<ul>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-center">
+							<h6 class="mt-5">Lorem ipsum (3):</h6>
+							<ul>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-center">
+							<h6 class="mt-5">Lorem ipsum (4):</h6>
+							<ul>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-center">
+							<h6 class="mt-5">Lorem ipsum (5):</h6>
+							<ul>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+								<li>
+									<a>Lorem Ipsum</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

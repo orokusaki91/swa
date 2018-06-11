@@ -350,10 +350,6 @@ header .dropdown-item:hover:not(.active) {
 	margin-top: 50px;
 }
 
-#about-us #carousel {
-	margin-bottom: 50px;
-}
-
 #about-us #carousel .carousel-inner {
 	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
@@ -361,7 +357,7 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #about-us #carousel .carousel-item img {
-	height: 550px;
+	height: 600px;
 }
 
 #about-us #carousel svg {
@@ -395,9 +391,10 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #services .item {
-	padding: 30px 20px;
+	padding: 25px;
 	background-color: rgba(242, 242, 242, 0.5);
 	transition: all .3s ease;
+	text-align: justify;
 	cursor: pointer;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
@@ -416,13 +413,13 @@ header .dropdown-item:hover:not(.active) {
 	position: relative;
 	padding-bottom: 15px;
 	margin-bottom: 30px;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 
 #services .item h3::after {
 	content: ' ';
 	height: 3px;
-	width: 90px;
+	width: 100px;
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -474,7 +471,6 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #partner .item {
-	padding: 30px;
 	transition: all .3s ease;
 	cursor: pointer;
 	background-color: #ffffff;
@@ -501,14 +497,19 @@ header .dropdown-item:hover:not(.active) {
 	margin-top: 50px;
 }
 
+#jobs .place {
+	margin-bottom: 100px;
+}
+
 #jobs #btn-scroll {
 	padding: 10px 15px 4px;
 	background-color: transparent;
 	border: 2px solid #000000;
 	border-radius: 0;
 	transition: all .3s ease;
-	margin-bottom: 50px;
 	cursor: pointer;
+	-vendor-animation-duration: 1s;
+	-vendor-animation-delay: 2s;
 }
 
 #jobs #btn-scroll:hover {
@@ -516,7 +517,44 @@ header .dropdown-item:hover:not(.active) {
 	color: #ffffff;
 }
 
+#jobs .tooltip-div {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+#jobs .tooltip-div .tooltip-text {
+	visibility: hidden;
+	width: 120px;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 999;
+	left: -35px;
+	top: -85px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+#jobs .tooltip-div .tooltip-text::after {
+	content: " ";
+	position: absolute;
+	left: 44%;
+	top: 100%;
+	border-width: 7px;
+	border-style: solid;
+	border-color: #000000 transparent transparent transparent;
+}
+
+#jobs .tooltip-div:hover .tooltip-text {
+	visibility: visible;
+	opacity: 1;
+}
+
 #jobs .jobs-background {
+	margin-top: 20px;
 	background: url("../img/jobs/jobs.jpg") center center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -525,29 +563,27 @@ header .dropdown-item:hover:not(.active) {
 
 #jobs .jobs-background .jobs-div {
 	color: #ffffff;
-	padding-top: 50px;
-	height: 1000px;
+	padding: 50px 0;
+	height: auto;
 }
 
-#jobs .scroll-down {
-	position: relative;
+#jobs .positions ul li {
+	list-style: none;
 }
 
-#jobs .tooltip-show {
-	position: absolute;
-	top: 5px;
-	left: 57%;
-	transform: translate(-57%, -0%);
-	visibility: hidden;
-	opacity: 0;
-	color: #ffffff;
-	padding: 5px 10px;
-	background-color: #000000;
+#jobs .positions ul li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
 }
 
-#jobs #btn-scroll:hover .tooltip-show {
-	visibility: visible !important;
-	opacity: 1 !important;
+#jobs .positions ul li a:hover {
+	text-decoration: underline !important;
+}
+
+#jobs .positions ul:last-child {
+	margin-bottom: 0;
 }
 
 /*----------------------------
@@ -562,6 +598,12 @@ header .dropdown-item:hover:not(.active) {
 	margin-top: 50px;
 }
 
+#contact .contact img {
+	width: 20px;
+	margin-right: 5px;
+	vertical-align: top;
+}
+
 #contact .key {
 	font-size: 16px;
 	font-weight: bold;
@@ -574,15 +616,13 @@ header .dropdown-item:hover:not(.active) {
 	margin-left: 30px;
 }
 
-#contact .contact img {
-	width: 20px;
-	margin-right: 5px;
-	vertical-align: top;
+#contact .value:last-child {
+	margin-bottom: 0;
 }
 
 #contact form {
 	background-color: #f2f2f2;
-	padding: 25px 10px;
+	padding: 25px;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
@@ -803,9 +843,6 @@ footer .copyright a:hover {
 	#contact #map {
 		min-height: 300px;
 	}
-	#jobs .jobs-background {
-		background-attachment: scroll;
-	}
 	footer {
 		padding-bottom: 15px;
 	}
@@ -830,7 +867,7 @@ footer .copyright a:hover {
 		width: 40%;
 	}
 	#about-us #carousel .carousel-item img {
-		height: 300px;
+		height: 250px;
 	}
 }
 

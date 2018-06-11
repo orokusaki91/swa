@@ -1,4 +1,8 @@
-@extends('layouts.app') @section('title', 'Contact') @section('content')
+@extends('layouts.app')
+
+@section('title', 'Contact')
+
+@section('content')
 <!-- Contact start -->
 <div id="contact">
 	<div class="container">
@@ -84,7 +88,7 @@
 		</div>
 	</div>
 	<!-- Map start -->
-	<div id="map"></div>
+	<div id="map" class="mb-5"></div>
 	<!-- Map end -->
 </div>
 <!-- Contact end -->

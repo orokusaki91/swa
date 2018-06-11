@@ -52,6 +52,18 @@ $(document).ready(function () {
 		$('html, body').animate({
 			scrollTop: $(".jobs-background").offset().top
 		}, 500);
+		$(this).removeClass("animated flash infinite");
+	});
+});
+
+$(document).ready(function () {
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+		//>=, not <=
+		if (scroll === 0) {
+			//clearHeader, not clearheader - caps H
+			$("#btn-scroll").addClass("animated flash infinite");
+		};
 	});
 });
 

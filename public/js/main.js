@@ -6,13 +6,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	if ($("#back-to-top").length) {
-		var scrollTrigger = 100, // px
+		var scrollTrigger = 300, // px
 			backToTop = function () {
 				var scrollTop = $(window).scrollTop();
 				if (scrollTop > scrollTrigger) {
-					$("#back-to-top").addClass("show");
+					$("#back-to-top").addClass("back-to-top-show");
 				} else {
-					$("#back-to-top").removeClass("show");
+					$("#back-to-top").removeClass("back-to-top-show");
 				}
 			};
 		backToTop();
@@ -23,7 +23,7 @@ $(document).ready(function () {
 			e.preventDefault();
 			$("html, body").animate({
 				scrollTop: 0
-			}, 1000);
+			}, 800);
 		});
 	}
 });
@@ -46,6 +46,14 @@ function closeNav() {
 	document.getElementById("top-menu").style.visibility = "visible";
 	document.getElementById("top-menu").style.opacity = "1";
 }
+
+$(document).ready(function () {
+	$("#btn-scroll").click(function () {
+		$('html, body').animate({
+			scrollTop: $(".jobs-background").offset().top
+		}, 500);
+	});
+});
 
 var map;
 

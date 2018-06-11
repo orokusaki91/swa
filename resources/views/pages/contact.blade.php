@@ -7,7 +7,7 @@
 <div id="contact">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0">
+			<div class="col-sm-10 offset-sm-1 mb-5 mb-md-0 col-md-6 offset-md-0">
 				<!-- Form start -->
 				<form action="">
 					<h3 class="text-center">Contact us</h3>

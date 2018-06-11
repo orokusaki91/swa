@@ -5,9 +5,9 @@
 <meta name="keywords" content="" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="theme-color" content="#4B5320" />
-<meta name="msapplication-navbutton-color" content="#4B5320" />
-<meta name="apple-mobile-web-app-status-bar-style" content="#4B5320" />
+<meta name="theme-color" content="#000000" />
+<meta name="msapplication-navbutton-color" content="#000000" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
 <!-- Meta tag end-->
 <title>S.W.A. Security | @yield('title')</title>
 <!-- Favicon start -->

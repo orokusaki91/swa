@@ -17,7 +17,7 @@
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<p id="service-1" class="collapse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<div class="text-center">
-						<button class="btn mt-4" data-toggle="collapse" href="#service-1" role="button" aria-expanded="false" aria-controls="service-1">See more...</button>
+						<button class="btn mt-4" data-toggle="collapse" href="#service-1" role="button" aria-expanded="false" aria-controls="service-1">alles sehen</button>
 					</div>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<p id="service-2" class="collapse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<div class="text-center">
-						<button class="btn mt-4" data-toggle="collapse" href="#service-2" role="button" aria-expanded="false" aria-controls="service-2">See more...</button>
+						<button class="btn mt-4" data-toggle="collapse" href="#service-2" role="button" aria-expanded="false" aria-controls="service-2">alles sehen</button>
 					</div>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<p id="service-3" class="collapse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<div class="text-center">
-						<button class="btn mt-4" data-toggle="collapse" href="#service-3" role="button" aria-expanded="false" aria-controls="service-3">See more...</button>
+						<button class="btn mt-4" data-toggle="collapse" href="#service-3" role="button" aria-expanded="false" aria-controls="service-3">alles sehen</button>
 					</div>
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<p id="service-4" class="collapse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<div class="text-center">
-						<button class="btn mt-4" data-toggle="collapse" href="#service-4" role="button" aria-expanded="false" aria-controls="service-4">See more...</button>
+						<button class="btn mt-4" data-toggle="collapse" href="#service-4" role="button" aria-expanded="false" aria-controls="service-4">alles sehen</button>
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<p id="service-5" class="collapse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<div class="text-center">
-						<button class="btn mt-4" data-toggle="collapse" href="#service-5" role="button" aria-expanded="false" aria-controls="service-5">See more...</button>
+						<button class="btn mt-4" data-toggle="collapse" href="#service-5" role="button" aria-expanded="false" aria-controls="service-5">alles sehen</button>
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,7 @@
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<p id="service-6" class="collapse">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<div class="text-center">
-						<button class="btn mt-4" data-toggle="collapse" href="#service-6" role="button" aria-expanded="false" aria-controls="service-6">See more...</button>
+						<button class="btn mt-4" data-toggle="collapse" href="#service-6" role="button" aria-expanded="false" aria-controls="service-6">alles sehen</button>
 					</div>
 				</div>
 			</div>			

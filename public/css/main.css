@@ -46,9 +46,28 @@ svg {
 	font-size: 18px !important;
 }
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
+    Loader start
+----------------------------*/
+
+#loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: #f2f2f2 url('../img/loader.gif') center center no-repeat;
+	background-size: 60px;
+}
+
+/*----------------------------
+    Loader end
+----------------------------*/
+
+/*----------------------------
     Top-menu start
------------------------------*/
+----------------------------*/
 
 #top-menu {
 	background-color: #000000;
@@ -59,15 +78,16 @@ svg {
 	left: 0;
 	z-index: 998;
 	transition: all .2s linear;
+	box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
 }
 
-#top-menu .side-nav {
+#top-menu .side-nav-icon {
+	float: right;
 	cursor: pointer;
 	width: 25px;
 }
 
 #top-menu .nav-item.dropdown {
-	float: right;
 	display: inline-block;
 	list-style: none;
 }
@@ -121,31 +141,39 @@ svg {
 
 /*----------------------------
     Top-menu end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Side-nav start
------------------------------*/
+----------------------------*/
 
 #side-nav {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
+	bottom: 0;
 	width: 0;
 	height: 100%;
 	z-index: 999;
 	background-color: #000000;
 	overflow-x: auto;
-	transition: all .2s linear;
-	-webkit-box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
-	box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
+	transition: all .3s linear;
+}
+
+#side-nav .logo-link {
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	width: 100px;
+	height: 100px;
+	background: #f2f2f2 url('../img/logo.png') center center no-repeat;
+	background-size: 90px;
 }
 
 #side-nav .close {
 	position: absolute;
 	top: 15px;
-	left: 15px;
+	right: 15px;
 	width: 25px;
 	height: 25px;
 	z-index: 999;
@@ -156,7 +184,8 @@ svg {
 
 #side-nav ul {
 	padding: 0;
-	padding-top: 70px;
+	margin: 0;
+	padding-top: 130px;
 }
 
 #side-nav ul li {
@@ -165,6 +194,7 @@ svg {
 
 #side-nav ul li a {
 	text-transform: uppercase;
+	font-weight: bold;
 	padding: 5px 0;
 	padding-left: 40px;
 	font-size: 20px;
@@ -174,8 +204,8 @@ svg {
 }
 
 #side-nav ul li a.active {
-	color: #000000;
 	font-weight: bold;
+	background-color: #4B5320;
 }
 
 #side-nav ul li a span {
@@ -184,11 +214,30 @@ svg {
 
 /*----------------------------
     Side-nav end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
+    Close-nav start
+----------------------------*/
+
+#close-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 100%;
+	z-index: 998;
+	background-color: rgba(41, 48, 59, .55);
+}
+
+/*----------------------------
+    Close-nav end
+----------------------------*/
+
+/*----------------------------
     Header start
------------------------------*/
+----------------------------*/
 
 header {
 	padding: 30px 0;
@@ -294,23 +343,24 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Header end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     App start
------------------------------*/
+----------------------------*/
 
 #app {
+	display: none;
 	min-height: 99.8%;
 }
 
 /*----------------------------
     App end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Home start
------------------------------*/
+----------------------------*/
 
 #home h3 {
 	font-family: 'Bebas';
@@ -329,7 +379,8 @@ header .dropdown-item:hover:not(.active) {
 	background-color: transparent;
 	border: 2px solid #4B5320;
 	transition: all .3s ease;
-	padding: 4px 12px 2px;
+	padding: 4px 10px 2px;
+	min-width: 120px;
 }
 
 #home #btn-seeAll:hover,
@@ -340,11 +391,11 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Home end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     About us start
------------------------------*/
+----------------------------*/
 
 #about-us {
 	margin-top: 50px;
@@ -380,11 +431,11 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     About us end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Services us start
------------------------------*/
+----------------------------*/
 
 #services {
 	margin-top: 50px;
@@ -440,9 +491,10 @@ header .dropdown-item:hover:not(.active) {
 	background-color: transparent;
 	border: 2px solid #4B5320;
 	color: #4B5320;
-	border-radius: 0;
-	padding: 5px 12px 4px;
 	transition: all .3s ease;
+	border-radius: 0;
+	padding: 4px 10px 2px;
+	min-width: 120px;
 }
 
 #services .btn:hover {
@@ -452,19 +504,19 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Services us end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     References start
------------------------------*/
+----------------------------*/
 
 /*----------------------------
     References end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Partner start
------------------------------*/
+----------------------------*/
 
 #partner {
 	margin-top: 50px;
@@ -487,11 +539,11 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Partner end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Jobs start
------------------------------*/
+----------------------------*/
 
 #jobs {
 	margin-top: 50px;
@@ -588,11 +640,11 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Jobs end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Contact start
------------------------------*/
+----------------------------*/
 
 #contact {
 	margin-top: 50px;
@@ -695,70 +747,87 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Contact end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Footer start
------------------------------*/
+----------------------------*/
 
-footer {
-	padding: 30px 0;
+#footer {
+	display: none;
+	padding: 30px 0 15px;
 }
 
-footer .social a {
+#footer .social a {
 	display: inline-block;
 }
 
-footer .social-icon {
+#footer .social-icon {
 	width: 30px;
 	height: 30px;
 	margin-right: 10px;
 	transition: all .3s ease;
 }
 
-footer .social-icon:last-child {
+#footer .social-icon:last-child {
 	margin-right: 0;
 }
 
-footer #facebook:hover,
-footer #instagram:hover {
+#footer #facebook:hover,
+#footer #instagram:hover {
 	background-color: #4d4d4d;
 }
 
-footer #facebook {
+#footer #facebook {
 	background: url('../img/social/facebook.png') center center no-repeat;
-	background-size: 20px 20px;
+	background-size: 20px;
 	background-color: #000000;
 	border-radius: 50%;
+	vertical-align: middle;
 }
 
-footer #instagram {
+#footer #instagram {
 	background: url('../img/social/instagram.png') center center no-repeat;
-	background-size: 20px 20px;
+	background-size: 20px;
 	background-color: #000000;
 	border-radius: 50%;
+	vertical-align: middle;
 }
 
-footer .copyright {
+#footer .impresum {
 	padding-top: 15px;
 }
 
-footer .copyright a {
+#footer .impresum a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+}
+
+#footer .impresum a:hover {
+	text-decoration: underline !important;
+}
+
+#footer .copyright {
+	padding-top: 15px;
+}
+
+#footer .copyright a {
 	color: #3ba9c0;
 	font-weight: bold;
 }
 
-footer .copyright a:hover {
+#footer .copyright a:hover {
 	text-decoration: underline !important;
 }
 
 /*----------------------------
     Footer end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Back-to-top start
------------------------------*/
+----------------------------*/
 
 #back-to-top {
 	position: fixed;
@@ -769,7 +838,7 @@ footer .copyright a:hover {
 	z-index: 999;
 	cursor: pointer;
 	background: url("../img/back-to-top.png") center center no-repeat;
-	background-size: 25px 25px;
+	background-size: 25px;
 	background-color: #000000;
 	border-radius: 50%;
 	transition: all .3s ease;
@@ -788,11 +857,11 @@ footer .copyright a:hover {
 
 /*----------------------------
     Back-to-top end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
     Fonts start
------------------------------*/
+----------------------------*/
 
 @font-face {
 	font-family: 'Bebas';
@@ -802,13 +871,13 @@ footer .copyright a:hover {
 
 /*----------------------------
     Fonts end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
 /* Media queries */
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (max-width: 319px) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (max-width: 319px) {
 	header {
@@ -816,13 +885,13 @@ footer .copyright a:hover {
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (max-width: 319px) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 	#app {
@@ -843,21 +912,21 @@ footer .copyright a:hover {
 	#contact #map {
 		min-height: 300px;
 	}
-	footer {
+	#footer {
 		padding-bottom: 15px;
 	}
-	footer #instagram {
+	#footer #instagram {
 		margin-right: 0;
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
 	header {
@@ -871,13 +940,13 @@ footer .copyright a:hover {
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1024px) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	header ul {
@@ -897,13 +966,13 @@ footer .copyright a:hover {
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1024px) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	header ul {
@@ -918,13 +987,13 @@ footer .copyright a:hover {
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
 	header ul {
@@ -936,13 +1005,13 @@ footer .copyright a:hover {
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 	header ul {
@@ -954,16 +1023,16 @@ footer .copyright a:hover {
 	}
 }
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/
 
-/*--------------------------------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 1366px) start
------------------------------------------------------------------------*/
+----------------------------*/
 
 @media only screen and (min-width: 1366px) {}
 
-/*---------------------------------------------------------------------
+/*----------------------------
 	@media only screen and (min-width: 1366px) end
---------------------------------------------------------------------------------------------*/
+----------------------------*/

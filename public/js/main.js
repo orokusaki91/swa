@@ -32,19 +32,18 @@ function openNav() {
 	var media = window.matchMedia("only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape)");
 	if (media.matches) { // If media query matches
 		document.getElementById("side-nav").style.width = "65%";
+		document.getElementById("close-nav").style.width = "100%";
 	} else {
 		document.getElementById("side-nav").style.width = "70%";
+		document.getElementById("close-nav").style.width = "100%";
 	}
 	document.body.style.overflowY = "hidden";
-	document.getElementById("top-menu").style.visibility = "hidden";
-	document.getElementById("top-menu").style.opacity = "0";
 }
 
 function closeNav() {
 	document.getElementById("side-nav").style.width = "0";
+	document.getElementById("close-nav").style.width = "0";
 	document.body.style.overflowY = "auto";
-	document.getElementById("top-menu").style.visibility = "visible";
-	document.getElementById("top-menu").style.opacity = "1";
 }
 
 $(document).ready(function () {
@@ -57,7 +56,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	$(window).scroll(function() {
+	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 		//>=, not <=
 		if (scroll === 0) {
@@ -77,4 +76,26 @@ function initMap() {
 		},
 		zoom: 10
 	});
+}
+
+$(document).ready(function () {
+	$(".btn").click(function () {
+		if ($(this).attr('aria-expanded') === 'true') {
+			$(this).html("alles sehen");
+		} else {
+			$(this).html("weniger sehen");
+		};
+	});
+});
+
+var myVar;
+
+function loader() {
+	myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+	document.getElementById("loader").style.display = "none";
+	document.getElementById("app").style.display = "block";
+	document.getElementById("footer").style.display = "block";
 }

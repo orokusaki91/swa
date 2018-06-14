@@ -5,7 +5,7 @@
 			<div class="col-md-6 col-lg-5 px-md-0 px-lg-3 text-md-right text-lg-left">
 				<nav class="nav-bar">
 					<ul class="text-uppercase font-weight-bold">
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a class="nav-link" href="{{ url('/') }}">Home</a>
 						</li>
 						<li class="nav-item">

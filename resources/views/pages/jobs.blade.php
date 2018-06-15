@@ -26,7 +26,7 @@
 				<p>Here you can apply for any of currently open positions.</p>
 				<div class="positions">
 					<div class="row">
-						<div class="col-md-6 text-md-center">
+						<div class="col-md-6">
 							<h6 class="mt-5">Lorem ipsum (5):</h6>
 							<ul>
 								<li>
@@ -46,7 +46,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-6 text-md-center">
+						<div class="col-md-6">
 							<h6 class="mt-5">Lorem ipsum (3):</h6>
 							<ul>
 								<li>
@@ -60,7 +60,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-6 text-md-center">
+						<div class="col-md-6">
 							<h6 class="mt-5">Lorem ipsum (4):</h6>
 							<ul>
 								<li>
@@ -77,7 +77,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-6 text-md-center">
+						<div class="col-md-6">
 							<h6 class="mt-5">Lorem ipsum (5):</h6>
 							<ul>
 								<li>

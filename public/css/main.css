@@ -139,7 +139,8 @@ svg {
 
 #top-menu .dropdown-item.active,
 #top-menu .dropdown-item:active {
-	background-color: #cccccc;
+	color: #000000;
+	background-color: #e6e6e6;
 }
 
 #top-menu .dropdown-item:hover:not(.active) {
@@ -329,7 +330,7 @@ header .dropdown-menu {
 header .dropdown-menu.show {
 	top: 10px !important;
 	left: auto !important;
-	right: -50px;
+	right: -40px;
 	padding: 0;
 	margin: 0;
 }
@@ -341,7 +342,8 @@ header .dropdown-menu a {
 
 header .dropdown-item.active,
 header .dropdown-item:active {
-	background-color: #cccccc;
+	color: #000000;
+	background-color: #e6e6e6;
 }
 
 header .dropdown-item:hover:not(.active) {

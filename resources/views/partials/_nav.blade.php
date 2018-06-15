@@ -3,8 +3,8 @@
 	<div class="container-fluid">
 		<div class="row align-items-center">
 			<div class="col-md-6 col-lg-5 px-md-0 px-lg-3 text-md-right text-lg-left">
-				<nav class="nav-bar">
-					<ul class="text-uppercase font-weight-bold">
+				<nav class="nav-bar float-md-right float-lg-left">
+					<ul class="text-uppercase font-weight-bold text-center">
 						<li class="nav-item active">
 							<a class="nav-link" href="{{ url('/') }}">Home</a>
 						</li>
@@ -23,7 +23,7 @@
 				</a>
 			</div>
 			<div class="col-md-6 col-lg-5 order-md-1 order-lg-2 text-md-left text-lg-right px-md-0 px-lg-3">
-				<nav class="nav-bar">
+				<nav class="nav-bar float-lg-right">
 					<ul class="text-uppercase font-weight-bold">
 						<li class="nav-item">
 							<a class="nav-link" href="{{ url('references') }}">Referenzen</a>

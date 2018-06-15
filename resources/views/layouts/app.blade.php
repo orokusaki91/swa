@@ -5,7 +5,7 @@
 	@include('partials._header')
 </head>
 
-<body onload="loader()">
+<body onload="loader()" class="{{ Route::getCurrentRoute()->uri() == '/' ? 'home-background' : '' }}">
 	<!-- Loader start -->
 	<div id="loader"></div>
 	<!-- Loader end -->
@@ -39,7 +39,7 @@
 		<div id="side-nav">
 			<a href="{{ url('/') }}" class="logo-link"></a>
 			<img class="close" src="{{ asset('img/close.png') }}" onclick="closeNav()" title="Close" alt="img/close.png" />
-			<ul>
+			<ul class="mb-sm-3">
 				<li><a href="{{ url ('/') }}" class="active">Home</a></li>
 				<li><a href="{{ url ('about_us') }}">Über<span>uns</span></a></li>
 				<li><a href="{{ url ('services') }}">Dienstleistungen</a></li>

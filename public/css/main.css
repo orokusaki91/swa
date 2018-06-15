@@ -8,9 +8,9 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	background: url('../img/background.png') 55% center no-repeat;
+	background: #ffffff center no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-repeat: no-repeat;
 	color: #000000;
 }
 
@@ -46,6 +46,13 @@ svg {
 	font-size: 18px !important;
 }
 
+
+.home-background {
+	background: url("../img/background.png") 55% center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 /*----------------------------
     Loader start
 ----------------------------*/
@@ -57,7 +64,7 @@ svg {
 	width: 100%;
 	height: 100%;
 	z-index: 999;
-	background: #f2f2f2 url('../img/loader.gif') center center no-repeat;
+	background: #f2f2f2 url('../img/loader.gif') center no-repeat;
 	background-size: 60px;
 }
 
@@ -163,11 +170,11 @@ svg {
 #side-nav .logo-link {
 	position: absolute;
 	top: 15px;
-	left: 40px;
+	left: 30px;
 	width: 100px;
 	height: 100px;
-	background: #f2f2f2 url('../img/logo.png') center center no-repeat;
-	background-size: 90px;
+	background: url('../img/logo-white.png') center no-repeat;
+	background-size: cover;
 }
 
 #side-nav .close {
@@ -185,7 +192,7 @@ svg {
 #side-nav ul {
 	padding: 0;
 	margin: 0;
-	padding-top: 130px;
+	padding-top: 145px;
 }
 
 #side-nav ul li {
@@ -196,7 +203,7 @@ svg {
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 5px 0;
-	padding-left: 40px;
+	padding-left: 30px;
 	font-size: 20px;
 	color: #FFFFFF;
 	display: block;
@@ -249,16 +256,16 @@ header ul {
 	font-size: 16px;
 }
 
-header .nav-bar .nav-item {
-	display: inline-block;
+header .nav-item {
+	float: left;
+	list-style: none;
 }
 
 header .nav-item a {
-	padding: 7px 15px 5px;
+	padding: 7px 20px 5px;
 	color: #000000;
 	font-weight: 500;
 	transition: all .2s ease;
-	display: inline-block;
 	position: relative;
 }
 
@@ -607,7 +614,7 @@ header .dropdown-item:hover:not(.active) {
 
 #jobs .jobs-background {
 	margin-top: 20px;
-	background: url("../img/jobs/jobs.jpg") center center no-repeat;
+	background: url("../img/jobs/jobs.jpg") center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100%;
@@ -779,7 +786,7 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #footer #facebook {
-	background: url('../img/social/facebook.png') center center no-repeat;
+	background: url('../img/social/facebook.png') center no-repeat;
 	background-size: 20px;
 	background-color: #000000;
 	border-radius: 50%;
@@ -787,29 +794,29 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #footer #instagram {
-	background: url('../img/social/instagram.png') center center no-repeat;
+	background: url('../img/social/instagram.png') center no-repeat;
 	background-size: 20px;
 	background-color: #000000;
 	border-radius: 50%;
 	vertical-align: middle;
 }
 
-#footer .impresum {
-	padding-top: 15px;
+#footer .links {
+	padding-top: 30px;
 }
 
-#footer .impresum a {
-	text-transform: uppercase;
+#footer .links a {
+	font-size: 16px;
 	color: #000000;
 	font-weight: bold;
 }
 
-#footer .impresum a:hover {
+#footer .links a:hover {
 	text-decoration: underline !important;
 }
 
 #footer .copyright {
-	padding-top: 15px;
+	padding-top: 30px;
 }
 
 #footer .copyright a {
@@ -835,9 +842,9 @@ header .dropdown-item:hover:not(.active) {
 	right: 15px;
 	width: 35px;
 	height: 35px;
-	z-index: 999;
+	z-index: 998;
 	cursor: pointer;
-	background: url("../img/back-to-top.png") center center no-repeat;
+	background: url("../img/back-to-top.png") center no-repeat;
 	background-size: 25px;
 	background-color: #000000;
 	border-radius: 50%;
@@ -932,6 +939,12 @@ header .dropdown-item:hover:not(.active) {
 	header {
 		display: none;
 	}
+	#side-nav .logo-link {
+		left: 40px;
+	}
+	#side-nav ul li a {
+		padding-left: 40px;
+	}
 	#home h3 {
 		width: 40%;
 	}
@@ -999,10 +1012,6 @@ header .dropdown-item:hover:not(.active) {
 	header ul {
 		font-size: 15px;
 	}
-
-	header .nav-item a {
-		padding: 7px 10px 5px;
-	}
 }
 
 /*----------------------------
@@ -1016,10 +1025,6 @@ header .dropdown-item:hover:not(.active) {
 @media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 	header ul {
 		font-size: 16px;
-	}
-
-	header .nav-item a {
-		padding: 7px 15px 5px;
 	}
 }
 

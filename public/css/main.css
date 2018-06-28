@@ -356,7 +356,6 @@ header .dropdown-item:hover:not(.active) {
 ----------------------------*/
 
 #app {
-	display: none;
 	min-height: 99.8%;
 }
 

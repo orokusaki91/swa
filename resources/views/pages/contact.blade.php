@@ -1,8 +1,4 @@
-@extends('layouts.app')
-
-@section('title', 'Contact')
-
-@section('content')
+@extends('layouts.app') @section('title', 'Contact') @section('content')
 <!-- Contact start -->
 <div id="contact">
 	<div class="container">
@@ -10,24 +6,32 @@
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
 				<div class="contact">
 					<p class="key">
-						<img src="{{ asset('img/contact/company.png') }}" alt="img/contact/company.png" title="Company" />
-						Name:
+						<img src="{{ asset('img/contact/company.png') }}" alt="img/contact/company.png" title="Name" /> Name:
 					</p>
-					<p class="value">Lorem ipsum</p>
+					<p class="value">SWA Security GmbH</p>
 					<p class="key">
-						<img src="{{ asset('img/contact/address.png') }}" alt="img/contact/address.png" title="Company" />
-						Address:
+						<img src="{{ asset('img/contact/address.png') }}" alt="img/contact/address.png" title="Adresse" /> Adresse:
 					</p>
-					<p class="value">Lorem ipsum</p>
-					<p class="key">
-						<img src="{{ asset('img/contact/email.png') }}" alt="img/contact/email.png" title="Company" />
-						Email:</p>
-					<p class="value">Lorem ipsum</p>
-					<p class="key">
-						<img src="{{ asset('img/contact/telephone.png') }}" alt="img/contact/telephone.png" title="Company" />
-						Telephone:
+					<p class="value">Postfach 329,
+						<br />Schonegsstrasse 21,
+						<br />3700 Spiez
 					</p>
-					<p class="value">Lorem ipsum</p>
+					<p class="key">
+						<img src="{{ asset('img/contact/email.png') }}" alt="img/contact/email.png" title="Email" /> Email:
+					</p>
+					<p class="value">
+						<a href="mailto:info@swasecurity.ch" target="_blank">
+							info@swasecurity.ch
+						</a>
+					</p>
+					<p class="key">
+						<img src="{{ asset('img/contact/telephone.png') }}" alt="img/contact/telephone.png" title="Telefon" /> Telefon:
+					</p>
+					<p class="value">
+						<a href="callto:078 835 36 32" target="_blank">
+							078 835 36 32
+						</a>
+					</p>
 				</div>
 			</div>
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
@@ -88,7 +92,9 @@
 		</div>
 	</div>
 	<!-- Map start -->
-	<div id="map" class="mb-5"></div>
+	<div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d684.0110125127429!2d7.6844056816418576!3d46.68573949745506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDQxJzA4LjkiTiA3wrA0MScwMy4zIkU!5e0!3m2!1sen!2srs!4v1531749521403" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 	<!-- Map end -->
 </div>
 <!-- Contact end -->

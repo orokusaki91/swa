@@ -325,9 +325,9 @@ header .dropdown-menu {
 }
 
 header .dropdown-menu.show {
-	top: 10px !important;
+	top: 5px !important;
 	left: auto !important;
-	right: -40px;
+	right: -30px;
 	padding: 0;
 	margin: 0;
 }
@@ -442,8 +442,38 @@ header .dropdown-item:hover:not(.active) {
     Services us start
 ----------------------------*/
 
-#services {
+#services h2 {
 	margin-top: 50px;
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+#services h3 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+#services .text {
+	text-indent: 50px;
+	margin-bottom: 20px;
+}
+
+#services .text.ordnung {
+	margin-top: 30px;
+}
+
+#services #protection .text {
+	margin: 0;
+}
+
+#services h5 {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#services h6 {
+	margin-top: 20px;
+	margin-bottom: 0;
 }
 
 #services .item {
@@ -512,11 +542,46 @@ header .dropdown-item:hover:not(.active) {
 ----------------------------*/
 
 /*----------------------------
-    References start
+    Partner start
 ----------------------------*/
 
+#references {
+	margin-top: 50px;
+}
+
+#references .item {
+	height: 200px;
+	position: relative;
+	transition: all .3s ease;
+	cursor: pointer;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#references .item:hover {
+	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
+}
+
+#references .item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#references .item img {
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 /*----------------------------
-    References end
+    Partner end
 ----------------------------*/
 
 /*----------------------------
@@ -528,6 +593,8 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #partner .item {
+	height: 200px;
+	position: relative;
 	transition: all .3s ease;
 	cursor: pointer;
 	background-color: #ffffff;
@@ -540,6 +607,20 @@ header .dropdown-item:hover:not(.active) {
 	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
+}
+
+#partner .item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#partner .item img {
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*----------------------------
@@ -657,7 +738,7 @@ header .dropdown-item:hover:not(.active) {
 
 #contact .contact img {
 	width: 20px;
-	margin-right: 5px;
+	margin-right: 10px;
 	vertical-align: top;
 }
 
@@ -670,11 +751,19 @@ header .dropdown-item:hover:not(.active) {
 #contact .value {
 	font-size: 16px;
 	margin-bottom: 30px;
-	margin-left: 30px;
+	margin-left: 35px;
 }
 
 #contact .value:last-child {
 	margin-bottom: 0;
+}
+
+#contact .value a {
+	color: #000000;
+}
+
+#contact .value a:hover {
+	text-decoration: underline !important;
 }
 
 #contact form {
@@ -741,10 +830,9 @@ header .dropdown-item:hover:not(.active) {
 	background-color: #646e2b;
 }
 
-#contact #map {
-	height: 100%;
-	min-height: 400px;
-	background-color: #f2f2f2;
+#contact iframe {
+	margin-bottom: 40px;
+	background-color: transparent;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
@@ -895,6 +983,23 @@ header .dropdown-item:hover:not(.active) {
 ----------------------------*/
 
 /*----------------------------
+	@media only screen and (max-width: 320px) start
+----------------------------*/
+
+@media only screen and (max-width: 320px) {
+	#side-nav ul li a {
+		font-size: 18px;
+	}
+	#contact form {
+		padding: 25px 15px;
+	}
+}
+
+/*----------------------------
+	@media only screen and (max-width: 320px) end
+----------------------------*/
+
+/*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) start
 ----------------------------*/
 
@@ -914,7 +1019,7 @@ header .dropdown-item:hover:not(.active) {
 	#about-us #carousel svg {
 		font-size: 35px !important;
 	}
-	#contact #map {
+	#contact iframe {
 		min-height: 300px;
 	}
 	#footer {
@@ -927,6 +1032,21 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+	#references .item img,
+	#partner .item img {
+		padding: 90px;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) end
 ----------------------------*/
 
 /*----------------------------
@@ -972,6 +1092,9 @@ header .dropdown-item:hover:not(.active) {
 	header .logo {
 		margin-top: 30px;
 	}
+	header .dropdown-menu.show {
+		right: -45px;
+	}
 	#about-us #carousel .carousel-item img {
 		height: 450px;
 	}
@@ -989,7 +1112,6 @@ header .dropdown-item:hover:not(.active) {
 	header ul {
 		font-size: 15px;
 	}
-
 	header .nav-item a {
 		padding: 7px 10px 5px;
 	}

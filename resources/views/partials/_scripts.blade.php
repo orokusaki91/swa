@@ -5,5 +5,5 @@
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/fontawesome-all.min.js') }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZv4d0llq6H3LTupaCXL-Vec5a-q7I28&callback=initMap" async defer></script>
 <script src="{{ asset('js/main.js?ver=' . str_random(10)) }}"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZv4d0llq6H3LTupaCXL-Vec5a-q7I28&callback=initMap" async defer></script>-->

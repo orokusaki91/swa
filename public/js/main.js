@@ -66,17 +66,17 @@ $(document).ready(function () {
 	});
 });
 
-var map;
-
-function initMap() {
-	map = new google.maps.Map(document.getElementById("map"), {
-		center: {
-			lat: 38.906659,
-			lng: 1.420721
-		},
-		zoom: 10
-	});
-}
+//var map;
+//
+//function initMap() {
+//	map = new google.maps.Map(document.getElementById("map"), {
+//		center: {
+//			lat: 46.685791,
+//			lng: 7.684245
+//		},
+//		zoom: 18
+//	});
+//}
 
 $(document).ready(function () {
 	$(".btn").click(function () {

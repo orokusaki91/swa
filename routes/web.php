@@ -23,6 +23,25 @@ Route::get('services', function () {
     return view('pages.services');
 });
 
+Route::get('guarding', function () {
+    return view('pages.guarding');
+});
+
+Route::get('order', function () {
+    return view('pages.order');
+});
+
+Route::get('protection', function () {
+    return view('pages.protection');
+});
+
+Route::get('ocassion', function () {
+    return view('pages.ocassion');
+});
+
+Route::get('traffic', function () {
+    return view('pages.traffic');
+});
 
 Route::get('references', function () {
     return view('pages.references');

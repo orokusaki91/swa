@@ -78,20 +78,20 @@ $(document).ready(function () {
 //	});
 //}
 
-$(document).ready(function () {
-	$(".btn").click(function () {
-		if ($(this).attr('aria-expanded') === 'true') {
-			$(this).html("alles sehen");
-		} else {
-			$(this).html("weniger sehen");
-		};
-	});
-});
+//$(document).ready(function () {
+//	$(".btn").click(function () {
+//		if ($(this).attr('aria-expanded') === 'true') {
+//			$(this).html("alles sehen");
+//		} else {
+//			$(this).html("weniger sehen");
+//		};
+//	});
+//});
 
 var myVar;
 
 function loader() {
-	myVar = setTimeout(showPage, 1000);
+	myVar = setTimeout(showPage, 300);
 }
 
 function showPage() {
@@ -99,3 +99,12 @@ function showPage() {
 	document.getElementById("app").style.display = "block";
 	document.getElementById("footer").style.display = "block";
 }
+
+$(document).ready(function () {
+	$(".service-text").each(function () {
+		if ($(this).text().length > 200) {
+			$(this).text($(this).text().substr(0, 197));
+			$(this).append('...');
+		}
+	});
+});

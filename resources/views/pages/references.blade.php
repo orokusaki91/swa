@@ -1,4 +1,8 @@
-@extends('layouts.app') @section('title', 'References') @section('content')
+@extends('layouts.app')
+
+@section('title', 'References')
+
+@section('content')
 <!-- References start -->
 <div id="references">
 	<div class="container">

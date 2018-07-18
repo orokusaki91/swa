@@ -5,7 +5,7 @@
 	@include('partials._header')
 </head>
 
-<body onload="loader()" class="{{ Route::getCurrentRoute()->uri() == '/' ? 'home-background' : '' }}">
+<body onload="loader()" class="{{ Route::getCurrentRoute()->uri() == '/' ? 'home-background' : 'background-color' }}">
 	<!-- Loader start -->
 	<div id="loader"></div>
 	<!-- Loader end -->

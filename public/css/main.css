@@ -25,7 +25,8 @@ body {
 
 button:focus,
 input:focus,
-textarea:focus {
+textarea:focus,
+a:focus {
 	box-shadow: none !important;
 	outline: none !important;
 }
@@ -49,6 +50,14 @@ svg {
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+/*
+.background-color {
+	background: url("../img/background.jpg") center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+*/
 
 /*----------------------------
     Loader start
@@ -442,24 +451,47 @@ header .dropdown-item:hover:not(.active) {
     Services us start
 ----------------------------*/
 
-#services h2 {
+#services {
 	margin-top: 50px;
-	margin-bottom: 0;
-	text-decoration: underline;
+}
+
+#services h2 {
+	font-family: 'Bebas';
+	position: relative;
+	padding-bottom: 15px;
+	margin-top: 0;
+	margin-bottom: 50px;
+	letter-spacing: 3px;
+}
+
+#services h2::after {
+	content: ' ';
+	height: 3px;
+	width: 100px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	background-color: #4B5320;
 }
 
 #services h3 {
-	margin-top: 30px;
+	font-family: 'Bebas';
+	color: #000000;
 	margin-bottom: 15px;
 }
 
-#services .text {
-	text-indent: 50px;
-	margin-bottom: 20px;
+#services h3 a {
+	color: #000000;
 }
 
-#services .text.ordnung {
-	margin-top: 30px;
+#services img {
+	width: 90px;
+}
+
+#services .text {
+	text-indent: 40px;
+	margin-bottom: 20px;
 }
 
 #services #protection .text {
@@ -467,21 +499,46 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #services h5 {
+	font-family: 'Bebas';
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
 
 #services h6 {
+	font-family: 'Bebas';
 	margin-top: 20px;
 	margin-bottom: 0;
 }
 
-#services .item {
-	padding: 25px;
+#services ul {
+	margin-bottom: 0;
+}
+
+#services .service-item {
+	border: 1px solid #000000;
+	padding: 30px;
+	margin-bottom: 30px;
 	background-color: rgba(242, 242, 242, 0.5);
 	transition: all .3s ease;
-	text-align: justify;
-	cursor: pointer;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#services .service-item p:last-child {
+	margin-bottom: 0;
+}
+
+#services .logo img {
+	width: 80px;
+}
+
+#services .item {
+	position: relative;
+	height: 100%;
+	padding: 5px 25px 0;
+	background-color: rgba(242, 242, 242, 0.5);
+	transition: all .3s ease;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
@@ -498,6 +555,7 @@ header .dropdown-item:hover:not(.active) {
 	font-family: 'Bebas';
 	position: relative;
 	padding-bottom: 15px;
+	margin-top: 0;
 	margin-bottom: 30px;
 	letter-spacing: 3px;
 }
@@ -519,10 +577,18 @@ header .dropdown-item:hover:not(.active) {
 
 #services .item svg {
 	font-size: 30px !important;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 
-#services .btn {
+#services .service-text {
+	padding-bottom: 75px;
+}
+
+#services .btn-readMore {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translate(-50%, 0);
 	background-color: transparent;
 	border: 2px solid #4B5320;
 	color: #4B5320;
@@ -532,7 +598,7 @@ header .dropdown-item:hover:not(.active) {
 	min-width: 120px;
 }
 
-#services .btn:hover {
+#services .btn-readMore:hover {
 	background-color: #43491d;
 	color: #ffffff;
 }

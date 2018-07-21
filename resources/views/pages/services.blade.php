@@ -1,10 +1,14 @@
-@extends('layouts.app') @section('title', 'Services') @section('content')
+@extends('layouts.app')
+
+@section('title', 'Services')
+
+@section('content')
 <!-- Services start -->
 <div id="services">
 	<div class="container">
-		<div class="row animated slideInUp">
+		<div class="row">
 			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="item">
+				<div class="item wow slideInUp">
 					<div class="icon text-center">
 						<img src="{{ asset('img/icon/guard.png') }}" title="Bewachung" alt="img/icon/guard.png" />
 					</div>
@@ -18,7 +22,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="item">
+				<div class="item wow slideInUp">
 					<div class="icon text-center">
 						<img src="{{ asset('img/icon/order.png') }}" title="Ordnung" alt="img/icon/order.png" />
 					</div>
@@ -32,7 +36,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="item">
+				<div class="item wow slideInUp">
 					<div class="icon text-center">
 						<img src="{{ asset('img/icon/protection.png') }}" title="Schutz" alt="img/icon/protection.png" />
 					</div>
@@ -46,7 +50,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="item">
+				<div class="item wow slideInUp">
 					<div class="icon text-center">
 						<img src="{{ asset('img/icon/ocassion.png') }}" title="Anlass" alt="img/icon/ocassion.png" />
 					</div>
@@ -60,7 +64,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="item">
+				<div class="item wow slideInUp">
 					<div class="icon text-center">
 						<img src="{{ asset('img/icon/traffic.png') }}" title="Anlass" alt="img/icon/traffic.png" />
 					</div>

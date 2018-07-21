@@ -3,14 +3,14 @@
 <!-- Guarding start -->
 <div id="services">
 	<div class="container">
-		<div id="guarding" class="animated slideInUp">
-			<div class="text-center logo">
-				<img src="{{ asset('img/icon/guard.png') }}" title="Bewachung" alt="img/icon/guard.png" />
+		<div id="guarding">
+			<div class="text-center wow slideInUp">
+				<img src="{{ asset('img/icon/guard.png') }}" class="logo" title="Bewachung" alt="img/icon/guard.png" />
+				<h2>Bewachung</h2>
 			</div>
-			<h2 class="text-center">Bewachung</h2>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Objektbewachung</h3>
 						<p class="text">Der Bedarf an temporären Bewachungsdienstleistungen ist vielfältig: Für Infrastrukturen im Freien, beim Auf- und Abbau von Ausstellungsständen oder beim Defekt des Schliesssystems in einem Eingangsbereich, bedeutet eine Objektbewachung garantierte Sicherheit, bis die eigenen Mitarbeitenden wieder zum Rechten schauen oder technische Dienste eintreffen. Um solche Aufgaben zu lösen, ist die SWA Security GmbH flexibel und organisiert. Bei Bedarf sind wir mit Pikettkräften schnell vor Ort und gewährleisten umfassenden Schutz für die erforderliche Zeitdauer.</p>
 						<h5>Ihre vorteile</h5>
@@ -19,7 +19,7 @@
 							<li>Vielfältige temporäre Bewachungsdienstleistungen</li>
 						</ul>
 					</div>
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Baustellenbewachung</h3>
 						<p class="text">Die Baustellenbewachung bietet Ihnen in allen Phasen eines Bauvorhabens zuverlässigen Schutz. Bereits bei der Planung stehen wir Ihnen zur Seite, um gemeinsam ein Sicherheitskonzept zu entwickeln, das Ihren Bedürfnissen entspricht. In der Bauphase verhindert die Bewachung Schadenereignisse. Damit entstehen keine unnötigen Verluste und Verzögerungen. Um Ihnen optimale Sicherheit zu bieten und Bauverzögerungen zu verhindern, stehen uns vielfältige Mittel zur Verfügung, die je nach Bedeutung, grösse, Lage und Umgebung der Baustelle individuell eingesetzt werden.</p>
 						<h5>Sicherheit für jede baustelle</h5>
@@ -33,11 +33,10 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Revierdienst</h3>
 						<p class="text">SWA Security ist eine kundenorientierte Firma mit eigenem, gut geschultem Personal stehen wir mit unserem Namen für Qualität. Eine Zusammenarbeit mit einem Subunternehmen kommt daher für uns nicht in Frage. Mit unseren Dienstleistungen inklusive dazugehörigem Pflichtenheft erfüllen wir Kundenwünsche zu kostengünstigen Tarifen.
-							<br /> Bezüglich Sicherheit wollen wir Ihnen zur Seite stehen und Sie unterstützen. Einer unserer Aufgabenbereiche ist der Revierdienst mit den dazu gehörenden Aufgaben wie
-						</p>
+							<br /> Bezüglich Sicherheit wollen wir Ihnen zur Seite stehen und Sie unterstützen. Einer unserer Aufgabenbereiche ist der Revierdienst mit den dazu gehörenden Aufgaben wie.</p>
 						<h5>Aussenkontrolle</h5>
 						<ul>
 							<li>Kontrolle von Türen, Tore und Fenster auf Verschluss</li>

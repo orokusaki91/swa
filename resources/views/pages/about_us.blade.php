@@ -6,7 +6,7 @@
 <!-- About us start -->
 <div id="about-us">
 	<div class="container">
-		<p class="mb-5">Die Geschichte und die umfassende Kompetenz der SWA Security GmbH in Bewachungs-, Ordnungs- und Sicherheitsaufgaben gründen auf einer 10jährigen Tradition auf dem Gebiet der Sicherheitsdienstleistungen. Als aktives Mitglied im Verband Schweizerischer Sicherheitsdienstleistungs-Unternehmen VSSU setzt die SWA Security GmbH sehr viel in die Aus- und Weiterbildung der Mitarbeiter.</p>
+		<p class="text mb-5">Die Geschichte und die umfassende Kompetenz der SWA Security GmbH in Bewachungs-, Ordnungs- und Sicherheitsaufgaben gründen auf einer 10jährigen Tradition auf dem Gebiet der Sicherheitsdienstleistungen. Als aktives Mitglied im Verband Schweizerischer Sicherheitsdienstleistungs-Unternehmen VSSU setzt die SWA Security GmbH sehr viel in die Aus- und Weiterbildung der Mitarbeiter.</p>
 		<div id="carousel" class="carousel slide px-0 col-md-10 offset-md-1 mb-5" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel" data-slide-to="0" class="active"></li>

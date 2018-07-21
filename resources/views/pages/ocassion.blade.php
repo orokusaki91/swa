@@ -3,14 +3,14 @@
 <!-- Ocassion start -->
 <div id="services">
 	<div class="container">
-		<div id="occasion" class="animated slideInUp">
-			<div class="text-center logo">
-				<img src="{{ asset('img/icon/ocassion.png') }}" title="Anlass" alt="img/icon/ocassion.png" />
+		<div id="occasion">
+			<div class="text-center wow slideInUp">
+				<img src="{{ asset('img/icon/ocassion.png') }}" class="logo" title="Anlass" alt="img/icon/ocassion.png" />
+				<h2>Anlass</h2>
 			</div>
-			<h2 class="text-center">Anlass</h2>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Aufsichtsdienst</h3>
 						<p class="text">Damit Ihr Event ein positives und einmaliges Erlebnis für Ihre Gäste und Besucher wird, sorgt unser Aufsichtsdienst für Sicherheit und einen reibungslosen Ablauf. Unsere Aufsichtsdienstspezialisten zeigen Präsenz und behalten die Geschehnisse im Blick. Sie sorgen für ein korrektes Verhalten der Besucher und greifen bei Konfliktsituationen oder gewalttätigen Auseinandersetzungen ein. Bei einem Notfall wird interveniert und falls nötig evakuiert, um die Sicherheit aller Besucher und Teilnehmer sicherzustellen.</p>
 						<ul>
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Zutrittskontrolle und Ticketing</h3>
 						<p class="text">Beim Durchführen kleiner oder grosser Anlässe spielt Sicherheit eine zentrale Rolle und fängt spätestens beim Einlass der Gäste an. Die SWA Security GmbH bietet professionelle Lösungen für die Zutrittskontrolle und das Ticketing. Unsere service-orientierten Mitarbeitenden überprüfen an den Eingängen die Gültigkeit von Tickets und Zutrittsbewilligungen und sorgen für einen geregelten und gut organisierten Ablauf. Bei erhöhten Sicherheits-Anforderungen können zudem Personen- und Taschenkontrollen durchgeführt werden. Die Zutrittskontrolle durch SWA Security trägt dazu bei, Ihren Verkaufserfolg zu sichern.</p>
 						<ul>

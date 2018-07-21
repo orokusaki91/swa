@@ -6,7 +6,7 @@
 <!-- References start -->
 <div id="references">
 	<div class="container">
-		<div class="row">
+		<div class="row wow slideInUp">
 			<div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-4 col-lg-3 mb-5">
 				<h5 class="mb-3">Hotel Olden Gstaad</h5>
 				<div class="item">

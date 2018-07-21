@@ -6,24 +6,25 @@
 <!-- Jobs start -->
 <div id="jobs">
 	<div class="container">
-		<h2 class="text-uppercase text-center">Looking for a job?</h2>
-		<p class="text-uppercase text-center place">There's no better place to start</p>
+		<h2 class="text-uppercase text-center wow slideInLeft">Suchen sie einen job?</h2>
+		<p class="text-uppercase text-center place wow slideInLeft">Es gibt keinen besseren Ort zum Starten</p>
 		<div class="text-center">
 			<div class="tooltip-div text-center">
-				<button id="btn-scroll" class="animated slideInDown infinite">
+				<button id="btn-scroll" class="wow slideInDown infinite">
 					<i class="fas fa-chevron-down"></i>
 				</button>
-				<div class="tooltip-text">Scroll down</div>
+				<div class="tooltip-text">Runterscrollen</div>
 			</div>
 		</div>
 	</div>
 	<div class="jobs-background">
 		<div class="container">
 			<div class="jobs-div">
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				<p>Die S.W.A. Security GmbH als Arbeitgeber bietet Ihnen ein vielfältiges Aufgabenbereich in einer familiären Arbeitsklima. Wir suchen regelmässig weitere motivierende und kompetente Mitarbeiter, werden Sie Teil des Teams! Wir bieten Ihnen spannende und abwechslungsreiche Tätigkeit im Sicherheitsdienst, Aus- und Weiterbildung, Gesamtarbeitsvertrag VSSU und vieles mehr. Haben wir Ihr Interesse geweckt? Untenstehend finden Sie die Ausschreibung mit den aktuellen Stellenangeboten. Wir freuen uns auf Ihre vollständigen Bewerbungsunterlagen mit aktuellen Strafregister- und Betreibungsauszug..
 				</p>
-				<h2 class="text-center mt-5">Open positions</h2>
-				<p>Here you can apply for any of currently open positions.</p>
+				<h2 class="text-center mt-5">offene Stellen</h2>
+<!--				<h1>Momentan befinden sich keine</h1>-->
+				<p>Hier können Sie sich für derzeit offene Stellen bewerben.</p>
 				<div class="positions">
 					<div class="row">
 						<div class="col-md-6">

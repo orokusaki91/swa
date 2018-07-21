@@ -41,7 +41,7 @@
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
 				<!-- Form start -->
 				<form action="">
-					<h3 class="text-center">Contact us</h3>
+					<h3 class="text-center">Kontaktiere uns</h3>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">
 							<div class="input-group-prepend">
@@ -69,7 +69,7 @@
 									<i class="fas fa-phone"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="Telephone" required />
+							<input type="text" class="form-control" placeholder="Telefon" required />
 						</div>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
@@ -79,16 +79,16 @@
 									<i class="fas fa-building"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="Company name" required />
+							<input type="text" class="form-control" placeholder="Name der Firma" required />
 						</div>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="form-group">
-							<textarea class="form-control" rows="5" placeholder="Leave your message..."></textarea>
+							<textarea class="form-control" rows="5" placeholder="Hinterlasse deine Nachricht..."></textarea>
 						</div>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3 text-center">
-						<button type="submit" id="btn-submit" class="btn btn-primary">Submit</button>
+						<button type="submit" id="btn-submit" class="btn btn-primary">Einreichen</button>
 					</div>
 				</form>
 				<!-- Form start -->

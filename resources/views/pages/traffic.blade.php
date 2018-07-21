@@ -3,14 +3,14 @@
 <!-- Traffic start -->
 <div id="services">
 	<div class="container">
-		<div id="traffic" class="animated slideInUp">
-			<div class="text-center logo">
-				<img src="{{ asset('img/icon/traffic.png') }}" title="Verkehr" alt="img/icon/traffic.png" />
+		<div id="traffic">
+			<div class="text-center wow slideInUp">
+				<img src="{{ asset('img/icon/traffic.png') }}" class="logo" title="Verkehr" alt="img/icon/traffic.png" />
+				<h2>Verkehr</h2>
 			</div>
-			<h2 class="text-center">Verkehr</h2>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Verkehrsdienst</h3>
 						<p class="text">Temporäre Umleitungen, Baustellen, Klein- und Grossveranstaltungen hindern den Verkehrsfluss und überlasten Zufahrtsstrassen und den laufenden Verkehr. Die Geduld von Automobilisten und Anwohnern wird durch diese stressige Zeit nicht selten auf die Probe gestellt. Um Stau, Lärm und Ärger zu vermeiden, stellen wir Ihnen rund um die Uhr erfahrene Verkehrsmitarbeiter zu Ihrer und der Sicherheit Ihrer Mitmenschen zur Verfügung.</p>
 						<ul>
@@ -26,7 +26,7 @@
 						</ul>
 						<p class="text">Dank dem gezielten Einsatz der SWA Security GmbH sind reibungslose Abläufe garantiert. Zur korrekten Erledigung dieser oft heiklen Aufgaben gehört neben den kompetenten Mitarbeitern auch die gute Zusammenarbeit mit den zuständigen Behörden. Wir planen gerne mit Ihnen zusammen ein Verkehrskonzept aus, denn dieses gehört heutzutage zu Erfolg und Sicherheit auf unserer Strasse.</p>
 					</div>
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Parkdienst</h3>
 						<p class="text">Bei Grossanlässen kann eine hohe Besucherzahl schnell zu einem Verkehrschaos auf Zufahrten und Parkplätzen führen. Damit es an Ihrem Anlass nicht dazu kommt, organisiert und regelt der Parkdienst von SWA Security GmbH den Verkehr optimal und sorgt für Sicherheit und Ordnung. Durch gekonntes Einweisen ankommender Fahrzeuge wird sichergestellt, dass Zufahrten passierbar bleiben und die Fahrzeuge rasch einen freien Parkplatz finden. Der Parkdienst weist die Besucher auf den Parkplätzen ein und garantiert ein optimales Ausnutzen der Parkfläche. Gebühren können vom Parkdienst direkt vor Ort eingezogen und abgerechnet werden. Für ankommende Besucher und Eventmitarbeitende stehen unsere Mitarbeiter jederzeit auch als Ansprech- und Auskunftstelle zur Verfügung.</p>
 						<ul>
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="service-item">
+					<div class="service-item wow slideInUp">
 						<h3>Interventionsdienst</h3>
 						<p class="text mb-1">Eine schnelle und professionelle durchgeführte Alarmverfolgung, gesteuert von einer mit modernster Technik ausgestatteten Notruf- und Servicezentrale, ermöglicht im Falle einer Alarmauslösung umgehende Hilfe und das 365 Tage / 24 Stunde.</p>
 						<p class="text mb-1">Unsere gut ausgebildeten Interventionskräfte verfügen über eine leistungsfähige Ausrüstung zu der, Fahrzeuge, Übermittlungsgeräte, Mittel zum Selbstschutz sowie Informationen zu den Einsatzorten, Zugangswege und den technischen Installationen gehören.</p>

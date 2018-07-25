@@ -5,13 +5,13 @@
 			<div class="col-md-6 col-lg-5 px-md-0 px-lg-3 text-md-right text-lg-left">
 				<nav class="nav-bar float-md-right float-lg-left">
 					<ul class="text-uppercase font-weight-bold text-center">
-						<li class="nav-item active">
+						<li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('/') }}">Home</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {{ Request::is('about_us') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('about_us') }}">Über uns</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {{ Request::is('services') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('services') }}">Dienstleistungen</a>
 						</li>
 					</ul>
@@ -25,16 +25,16 @@
 			<div class="col-md-6 col-lg-5 order-md-1 order-lg-2 text-md-left text-lg-right px-md-0 px-lg-3">
 				<nav class="nav-bar float-lg-right">
 					<ul class="text-uppercase font-weight-bold">
-						<li class="nav-item">
+						<li class="nav-item {{ Request::is('references') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('references') }}">Referenzen</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {{ Request::is('partner') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('partner') }}">Partner</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {{ Request::is('jobs') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('jobs') }}">Jobs</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {{ Request::is('contact') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('contact') }}">Kontakt</a>
 						</li>
 						<li class="nav-item dropdown">

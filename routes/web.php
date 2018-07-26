@@ -55,6 +55,8 @@ Route::get('jobs', function () {
     return view('pages.jobs');
 });
 
-Route::get('kontakt', function () {
-    return view('pages.contact');
-});
+Route::get('kontakt', 'ContactController@index');
+
+
+Auth::routes();
+

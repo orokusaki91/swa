@@ -8,11 +8,11 @@
 						<li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('/') }}">Home</a>
 						</li>
-						<li class="nav-item {{ Request::is('about_us') ? 'active' : '' }}">
-							<a class="nav-link" href="{{ url('about_us') }}">Über uns</a>
+						<li class="nav-item {{ Request::is('über_uns') ? 'active' : '' }}">
+							<a class="nav-link" href="{{ url('über_uns') }}">Über uns</a>
 						</li>
-						<li class="nav-item {{ Request::is('services') ? 'active' : '' }}">
-							<a class="nav-link" href="{{ url('services') }}">Dienstleistungen</a>
+						<li class="nav-item {{ Request::is('dienstleistungen') ? 'active' : '' }}">
+							<a class="nav-link" href="{{ url('dienstleistungen') }}">Dienstleistungen</a>
 						</li>
 					</ul>
 				</nav>
@@ -25,8 +25,8 @@
 			<div class="col-md-6 col-lg-5 order-md-1 order-lg-2 text-md-left text-lg-right px-md-0 px-lg-3">
 				<nav class="nav-bar float-lg-right">
 					<ul class="text-uppercase font-weight-bold">
-						<li class="nav-item {{ Request::is('references') ? 'active' : '' }}">
-							<a class="nav-link" href="{{ url('references') }}">Referenzen</a>
+						<li class="nav-item {{ Request::is('referenzen') ? 'active' : '' }}">
+							<a class="nav-link" href="{{ url('referenzen') }}">Referenzen</a>
 						</li>
 						<li class="nav-item {{ Request::is('partner') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('partner') }}">Partner</a>
@@ -34,8 +34,8 @@
 						<li class="nav-item {{ Request::is('jobs') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('jobs') }}">Jobs</a>
 						</li>
-						<li class="nav-item {{ Request::is('contact') ? 'active' : '' }}">
-							<a class="nav-link" href="{{ url('contact') }}">Kontakt</a>
+						<li class="nav-item {{ Request::is('kontakt') ? 'active' : '' }}">
+							<a class="nav-link" href="{{ url('kontakt') }}">Kontakt</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

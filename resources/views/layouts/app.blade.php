@@ -5,7 +5,7 @@
 	@include('partials._header')
 </head>
 
-<body onload="loader()" class="{{ Route::getCurrentRoute()->uri() == '/' ? 'home-background' : 'background' }}">
+<body onload="loader()" class="{{ Route::getCurrentRoute()->uri() == '/' ? 'home-background' : '' }} {{ Route::getCurrentRoute()->uri() == '/kontakt' ? 'background' : '' }}">
 	<!-- Loader start -->
 	<div id="loader"></div>
 	<!-- Loader end -->
@@ -40,13 +40,13 @@
 			<a href="{{ url('/') }}" class="logo-link"></a>
 			<img class="close" src="{{ asset('img/close.png') }}" onclick="closeNav()" title="Close" alt="img/close.png" />
 			<ul class="mb-sm-3">
-				<li><a href="{{ url ('/') }}" class="active">Home</a></li>
-				<li><a href="{{ url ('about_us') }}">Über<span>uns</span></a></li>
-				<li><a href="{{ url ('services') }}">Dienstleistungen</a></li>
-				<li><a href="{{ url ('references') }}">Referenzen</a></li>
-				<li><a href="{{ url ('partner') }}">Partner</a></li>
-				<li><a href="{{ url ('jobs') }}">Jobs</a></li>
-				<li><a href="{{ url ('contact') }}">Kontakt</a>
+				<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ url ('/') }}" class="active">Home</a></li>
+				<li class="{{ Request::is('über_uns') ? 'active' : '' }}"><a href="{{ url ('über_uns') }}">Über<span>uns</span></a></li>
+				<li class="{{ Request::is('dienstleistungen') ? 'active' : '' }}"><a href="{{ url ('dienstleistungen') }}">Dienstleistungen</a></li>
+				<li class="{{ Request::is('referenzen') ? 'active' : '' }}"><a href="{{ url ('referenzen') }}">Referenzen</a></li>
+				<li class="{{ Request::is('partner') ? 'active' : '' }}"><a href="{{ url ('partner') }}">Partner</a></li>
+				<li class="{{ Request::is('jobs') ? 'active' : '' }}"><a href="{{ url ('jobs') }}">Jobs</a></li>
+				<li class="{{ Request::is('kontakt') ? 'active' : '' }}"><a href="{{ url ('kontakt') }}">Kontakt</a>
 			</ul>
 		</div>
 		<!-- Sidenav end -->

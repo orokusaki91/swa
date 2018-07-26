@@ -452,16 +452,12 @@ header .dropdown-item:hover:not(.active) {
 	border-radius: 3px;
 }
 
-#about-us .carousel-indicators {
-	bottom: 20px;
-}
-
 #about-us .carousel-indicators li {
-	background-color: #000000;
+	background-color: #8c8c8c;
 }
 
 #about-us .carousel-indicators li.active {
-	background-color: #8c8c8c;
+	background-color: #000000;
 }
 
 /*----------------------------
@@ -729,10 +725,6 @@ header .dropdown-item:hover:not(.active) {
 	margin-top: 50px;
 }
 
-#jobs .place {
-	margin-bottom: 100px;
-}
-
 #jobs #btn-scroll {
 	padding: 10px 15px 4px;
 	background-color: transparent;
@@ -818,6 +810,15 @@ header .dropdown-item:hover:not(.active) {
 	margin-bottom: 0;
 }
 
+#jobs .mailto {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#jobs .mailto:hover {
+	text-decoration: underline !important;
+}
+
 /*----------------------------
     Jobs end
 ----------------------------*/
@@ -837,14 +838,12 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #contact .key {
-	color: #ffffff;
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
 #contact .value {
-	color: #ffffff;
 	font-size: 16px;
 	margin-bottom: 30px;
 	margin-left: 35px;
@@ -855,19 +854,25 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #contact .value a {
-	color: #ffffff;
+	color: #000000;
 }
 
 #contact .value a:hover {
 	text-decoration: underline !important;
 }
 
+#contact .contact,
 #contact form {
+	height: 100%;
 	background-color: #f2f2f2;
 	padding: 25px;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#contact .information {
+	padding-left: 40px;
 }
 
 #contact h3 {
@@ -945,7 +950,7 @@ header .dropdown-item:hover:not(.active) {
 #footer {
 	display: none;
 	padding: 30px 0 15px;
-	/*	background-color: #f2f2f2;*/
+	background-color: rgba(242, 242, 242, 0.5);
 }
 
 #footer .social a {
@@ -963,15 +968,10 @@ header .dropdown-item:hover:not(.active) {
 	margin-right: 0;
 }
 
-#footer #facebook:hover,
-#footer #instagram:hover {
-	background-color: #f2f2f2;
-}
-
 #footer #facebook {
 	background: url('../img/social/facebook.png') center no-repeat;
 	background-size: 20px;
-	background-color: #ffffff;
+	background-color: #000000;
 	border-radius: 50%;
 	vertical-align: middle;
 	transition: all .3s ease;
@@ -980,10 +980,15 @@ header .dropdown-item:hover:not(.active) {
 #footer #instagram {
 	background: url('../img/social/instagram.png') center no-repeat;
 	background-size: 20px;
-	background-color: #ffffff;
+	background-color: #000000;
 	border-radius: 50%;
 	vertical-align: middle;
 	transition: all .3s ease;
+}
+
+#footer #facebook:hover,
+#footer #instagram:hover {
+	background-color: #4d4d4d;
 }
 
 #footer .links {
@@ -1092,6 +1097,9 @@ header .dropdown-item:hover:not(.active) {
 	#contact form {
 		padding: 25px 15px;
 	}
+	#contact .information {
+		padding-left: 0;
+	}
 }
 
 /*----------------------------
@@ -1117,6 +1125,9 @@ header .dropdown-item:hover:not(.active) {
 	}
 	#about-us #carousel svg {
 		font-size: 35px !important;
+	}
+	#contact .information {
+		padding-left: 0;
 	}
 	#contact iframe {
 		min-height: 300px;
@@ -1197,6 +1208,9 @@ header .dropdown-item:hover:not(.active) {
 	#about-us #carousel .carousel-item img {
 		height: 450px;
 	}
+	#contact .information {
+		padding-left: 10px;
+	}
 }
 
 /*----------------------------
@@ -1216,6 +1230,9 @@ header .dropdown-item:hover:not(.active) {
 	}
 	#about-us #carousel .carousel-item img {
 		height: 450px;
+	}
+	#contact .information {
+		padding-left: 0;
 	}
 }
 

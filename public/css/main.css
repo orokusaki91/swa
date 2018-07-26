@@ -400,7 +400,7 @@ header .dropdown-item:hover:not(.active) {
 	background-color: transparent;
 	border: 2px solid #4B5320;
 	transition: all .3s ease;
-	padding: 4px 10px 2px;
+	padding: 4px 0 2px;
 	min-width: 120px;
 }
 
@@ -588,7 +588,7 @@ header .dropdown-item:hover:not(.active) {
 	position: relative;
 	padding-bottom: 15px;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	letter-spacing: 3px;
 }
 
@@ -626,7 +626,7 @@ header .dropdown-item:hover:not(.active) {
 	color: #4B5320;
 	transition: all .3s ease;
 	border-radius: 0;
-	padding: 4px 10px 2px;
+	padding: 4px 0 2px;
 	min-width: 120px;
 }
 
@@ -891,7 +891,7 @@ header .dropdown-item:hover:not(.active) {
 	font-family: 'Bebas';
 	position: relative;
 	padding-bottom: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 #contact h3::after {
@@ -905,20 +905,6 @@ header .dropdown-item:hover:not(.active) {
 	background-color: #4B5320;
 }
 
-#contact .form-control {
-	border-radius: 0;
-	padding: 8px 10px 5px;
-}
-
-#contact .input-group-text {
-	border-radius: 0;
-}
-
-#contact .form-control:focus {
-	border: 1px solid #ced4da;
-	background-color: #FAFFBD;
-}
-
 #contact .input-group,
 #contact textarea.form-control {
 	-webkit-box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
@@ -926,11 +912,25 @@ header .dropdown-item:hover:not(.active) {
 	box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
 }
 
+#contact .input-group-text {
+	border-radius: 0;
+}
+
+#contact .form-control {
+	border-radius: 0;
+	padding: 8px 10px 5px;
+}
+
+#contact .form-control:focus {
+	border: 1px solid #ced4da;
+	background-color: #FAFFBD;
+}
+
 #contact #btn-submit {
 	width: 100%;
 	background-color: #4B5320;
 	border: none;
-	padding: 10px 10px 8px;
+	padding: 10px 0 8px;
 	letter-spacing: 1px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -953,6 +953,190 @@ header .dropdown-item:hover:not(.active) {
 
 /*----------------------------
     Contact end
+----------------------------*/
+
+/*----------------------------
+    Login start
+----------------------------*/
+
+#login {
+	margin-top: 50px;
+}
+
+#login .login-div {
+	background-color: #f2f2f2;
+	padding: 50px 130px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#login h3 {
+	font-family: 'Bebas';
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 35px;
+}
+
+#login h3::after {
+	content: ' ';
+	height: 3px;
+	width: 90px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	background-color: #4B5320;
+}
+
+#login .form-group {
+	margin: 0;
+}
+
+#login .input-group {
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
+	-moz-box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
+	box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
+}
+
+#login .input-group.password {
+	margin-bottom: 0;
+}
+
+#login .input-group-text {
+	border-radius: 0;
+}
+
+#login .form-control {
+	border-radius: 0;
+	padding: 8px 10px 5px;
+}
+
+#login .form-control:focus {
+	border: 1px solid #ced4da;
+	background-color: #FAFFBD;
+}
+
+#login .remember {
+	margin-top: 10px;
+}
+
+#login .remember label {
+	margin-bottom: 0;
+}
+
+#login .remember input {
+	transform: scale(1.23);
+	margin-right: 3px;
+}
+
+#login .forgot-password a {
+	color: #000000;
+	padding: 15px 0;
+}
+
+#login .forgot-password a:hover {
+	text-decoration: underline !important;
+}
+
+#login .login {
+	width: 100%;
+	background-color: #4B5320;
+	border: none;
+	padding: 10px 0 8px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 0;
+	transition: all .5s ease;
+}
+
+#login .login:hover {
+	background-color: #646e2b;
+}
+
+/*----------------------------
+    Login end
+----------------------------*/
+
+/*----------------------------
+    Reset password start
+----------------------------*/
+
+#reset-password {
+	margin-top: 50px;
+}
+
+#reset-password .reset-password-div {
+	background-color: #f2f2f2;
+	padding: 50px 130px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#reset-password h3 {
+	font-family: 'Bebas';
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 35px;
+}
+
+#reset-password h3::after {
+	content: ' ';
+	height: 3px;
+	width: 90px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	background-color: #4B5320;
+}
+
+#reset-password .form-group {
+	margin: 0;
+}
+
+#reset-password .input-group {
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
+	-moz-box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
+	box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75) !important;
+}
+
+#reset-password .input-group-text {
+	border-radius: 0;
+}
+
+#reset-password .form-control {
+	border-radius: 0;
+	padding: 8px 10px 5px;
+}
+
+#reset-password .form-control:focus {
+	border: 1px solid #ced4da;
+	background-color: #FAFFBD;
+}
+
+#reset-password .reset-password {
+	width: 100%;
+	background-color: #4B5320;
+	border: none;
+	padding: 10px 0 8px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 0;
+	transition: all .5s ease;
+}
+
+#reset-password .reset-password:hover {
+	background-color: #646e2b;
+}
+
+/*----------------------------
+    Reset password end
 ----------------------------*/
 
 /*----------------------------

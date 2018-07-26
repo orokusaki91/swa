@@ -837,12 +837,14 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #contact .key {
+	color: #ffffff;
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
 #contact .value {
+	color: #ffffff;
 	font-size: 16px;
 	margin-bottom: 30px;
 	margin-left: 35px;
@@ -853,7 +855,7 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #contact .value a {
-	color: #000000;
+	color: #ffffff;
 }
 
 #contact .value a:hover {

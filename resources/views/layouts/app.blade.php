@@ -42,13 +42,13 @@
 			<a href="{{ url('/') }}" class="logo-link"></a>
 			<img class="close" src="{{ asset('img/close.png') }}" onclick="closeNav()" title="Close" alt="img/close.png" />
 			<ul class="mb-sm-3">
-				<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ url ('/') }}" class="active">Home</a></li>
-				<li class="{{ Request::is('über_uns') ? 'active' : '' }}"><a href="{{ url ('über_uns') }}">Über<span>uns</span></a></li>
-				<li class="{{ Request::is('dienstleistungen') ? 'active' : '' }}"><a href="{{ url ('dienstleistungen') }}">Dienstleistungen</a></li>
-				<li class="{{ Request::is('referenzen') ? 'active' : '' }}"><a href="{{ url ('referenzen') }}">Referenzen</a></li>
-				<li class="{{ Request::is('partner') ? 'active' : '' }}"><a href="{{ url ('partner') }}">Partner</a></li>
-				<li class="{{ Request::is('jobs') ? 'active' : '' }}"><a href="{{ url ('jobs') }}">Jobs</a></li>
-				<li class="{{ Request::is('kontakt') ? 'active' : '' }}"><a href="{{ url ('kontakt') }}">Kontakt</a>
+				<li><a href="{{ url ('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
+				<li><a href="{{ url ('über_uns') }}" class="{{ Request::is('über_uns') ? 'active' : '' }}">Über<span>uns</span></a></li>
+				<li><a href="{{ url ('dienstleistungen') }}" class="{{ Request::is('dienstleistungen') ? 'active' : '' }}">Dienstleistungen</a></li>
+				<li><a href="{{ url ('referenzen') }}" class="{{ Request::is('referenzen') ? 'active' : '' }}">Referenzen</a></li>
+				<li><a href="{{ url ('partner') }}" class="{{ Request::is('partner') ? 'active' : '' }}">Partner</a></li>
+				<li><a href="{{ url ('jobs') }}" class="{{ Request::is('jobs') ? 'active' : '' }}">Jobs</a></li>
+				<li><a href="{{ url ('kontakt') }}" class="{{ Request::is('kontakt') ? 'active' : '' }}">Kontakt</a>
 			</ul>
 		</div>
 		<!-- Sidenav end -->

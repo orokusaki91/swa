@@ -14,6 +14,23 @@
 		<!-- Top-menu start -->
 		<div id="top-menu">
 			<!-- Language mobile start -->
+<!--
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="{{ asset('img/flag/de.png') }}" class="language" title="Deutsch" alt="img/flag/de.png" />
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item active" href="#">
+						<img src="{{ asset('img/flag/de.png') }}" class="flag" title="Deutsch" alt="img/flag/de.png" />
+						Deutsch
+					</a>
+					<a class="dropdown-item" href="#">
+						<img src="{{ asset('img/flag/gb.png') }}" class="flag" title="Englisch" alt="img/flag/gb.png" />
+						Englisch
+					</a>
+				</div>
+			</li>
+-->
 			<!-- Language mobile end -->
 			<!-- Side-nav icon start -->
 			<img class="side-nav-icon" src="{{ asset('img/side-menu.png') }}" onclick="openNav()" title="Side nav" alt="img/side-menu.png" />

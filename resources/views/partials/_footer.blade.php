@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="copyright text-center">
-			Copyright © 2018 <a href="https://www.webtory.rs" target="_blank" title="Webtory">Webtory</a>. All rights reserved
+			Copyright © 2018 <a href="https://www.webtory.rs" target="_blank" title="MP Soft">MP Soft</a>. All rights reserved
 		</div>
 	</div>
 </footer>

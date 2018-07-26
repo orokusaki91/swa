@@ -965,7 +965,7 @@ header .dropdown-item:hover:not(.active) {
 
 #footer #facebook:hover,
 #footer #instagram:hover {
-	background-color: #4d4d4d;
+	background-color: #ffffff;
 }
 
 #footer #facebook {
@@ -1003,7 +1003,7 @@ header .dropdown-item:hover:not(.active) {
 }
 
 #footer .copyright a {
-	color: #3ba9c0;
+	color: #000000;
 	font-weight: bold;
 }
 

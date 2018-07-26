@@ -827,6 +827,10 @@ header .dropdown-item:hover:not(.active) {
 	text-decoration: underline !important;
 }
 
+#jobs .jobs-text {
+	width: 50%;
+}
+
 /*----------------------------
     Jobs end
 ----------------------------*/
@@ -1102,6 +1106,9 @@ header .dropdown-item:hover:not(.active) {
 	#side-nav ul li a {
 		font-size: 18px;
 	}
+	#jobs .jobs-text {
+		width: 100%;
+	}
 	#contact form {
 		padding: 25px 15px;
 	}
@@ -1133,6 +1140,9 @@ header .dropdown-item:hover:not(.active) {
 	}
 	#about-us #carousel svg {
 		font-size: 35px !important;
+	}
+	#jobs .jobs-text {
+		width: 100%;
 	}
 	#contact .information {
 		padding-left: 0;

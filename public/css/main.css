@@ -51,6 +51,14 @@ svg {
 	background-size: cover;
 }
 
+/*
+.background-jobs {
+	background: url("../img/jobs/jobs.jpg") center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+*/
+
 .background {
 	background: url("../img/car-2.jpg") center no-repeat;
 	background-attachment: fixed;
@@ -253,7 +261,7 @@ svg {
 
 header {
 	padding: 30px 0;
-	/*	background-color: #f2f2f2;*/
+	background-color: rgba(255, 255, 255, .4);
 }
 
 header ul {
@@ -950,7 +958,7 @@ header .dropdown-item:hover:not(.active) {
 #footer {
 	display: none;
 	padding: 30px 0 15px;
-	background-color: rgba(242, 242, 242, 0.5);
+	background-color: rgba(255, 255, 255, .4);
 }
 
 #footer .social a {

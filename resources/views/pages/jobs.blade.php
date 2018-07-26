@@ -19,8 +19,10 @@
 				<p>Die S.W.A. Security GmbH als Arbeitgeber bietet Ihnen ein vielfältiges Aufgabenbereich in einer familiären Arbeitsklima. Wir suchen regelmässig weitere motivierende und kompetente Mitarbeiter, werden Sie Teil des Teams! Wir bieten Ihnen spannende und abwechslungsreiche Tätigkeit im Sicherheitsdienst, Aus- und Weiterbildung, Gesamtarbeitsvertrag VSSU und vieles mehr. Haben wir Ihr Interesse geweckt? Untenstehend finden Sie die Ausschreibung mit den aktuellen Stellenangeboten. Wir freuen uns auf Ihre vollständigen Bewerbungsunterlagen mit aktuellen Strafregister- und Betreibungsauszug..
 				</p>
 				<h2 class="text-center mt-5">Offene Stellen</h2>
-				<h6>Anforderungen:</h6>
-				<p>Sie haben mind. eine C- Bewilligung. Sie sind zwischen 20-50 Jahre alt. Sie haben einen guten Leumund, keine Eintragungen im Straf- und Betreibungsregister. Gute Deutschkenntnisse in Wort und Schrift. Sie sind gesund, körperlich fit, sozial kompetent, ehrlich, sehr flexibel, teamfähig, zuverlässig und verschwiegen. Gültiger Führerausweis Kat. B von Vorteil. Ausbildungen im Sicherheitsbereich von Vorteil. Senden Sie ihre Bewerbung mit Lebenslauf, Motivationsschreiben und Passfoto bitte an <a href="mailto:info@swasecurity.ch" title="Kontaktiere uns" class="mailto">info@swasecurity.ch</a>. (nur elektronische Bewerbungen werden berücksichtigt)</p>
+				<div class="w-50">
+					<h6>Anforderungen:</h6>
+					<p>Sie haben mind. eine C- Bewilligung. Sie sind zwischen 20-50 Jahre alt. Sie haben einen guten Leumund, keine Eintragungen im Straf- und Betreibungsregister. Gute Deutschkenntnisse in Wort und Schrift. Sie sind gesund, körperlich fit, sozial kompetent, ehrlich, sehr flexibel, teamfähig, zuverlässig und verschwiegen. Gültiger Führerausweis Kat. B von Vorteil. Ausbildungen im Sicherheitsbereich von Vorteil. Senden Sie ihre Bewerbung mit Lebenslauf, Motivationsschreiben und Passfoto bitte an <a href="mailto:info@swasecurity.ch" title="Kontaktiere uns" class="mailto">info@swasecurity.ch</a>. (nur elektronische Bewerbungen werden berücksichtigt)</p>
+				</div>
 				<!--				<h1>Momentan befinden sich keine</h1>-->
 				<!--
 				<p>Hier können Sie sich für derzeit offene Stellen bewerben.</p>

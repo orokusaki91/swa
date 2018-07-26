@@ -1,5 +1,5 @@
 <!-- Footer start -->
-<footer id="footer">
+<footer id="footer" class="{{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'contact-footer' : '' }}">
 	<div class="container">
 		<div class="social">
 			<a href="https://www.facebook.com" id="facebook" class="social-icon" title="Facebook"></a>

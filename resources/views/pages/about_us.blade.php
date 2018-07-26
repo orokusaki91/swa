@@ -12,24 +12,40 @@
 				<li data-target="#carousel" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel" data-slide-to="1"></li>
 				<li data-target="#carousel" data-slide-to="2"></li>
+				<li data-target="#carousel" data-slide-to="3"></li>
+				<li data-target="#carousel" data-slide-to="4"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-1.jpg') }}" alt="First slide">
+					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-1.jpg') }}" alt="img/carousel/carousel-1.jpg" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>S.W.A. Security</h5>
 						<p>Lorem Ipsum</p>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-2.jpg') }}" alt="Second slide">
+					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-2.jpg') }}" alt="img/carousel/carousel-2.jpg" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>S.W.A. Security</h5>
 						<p>Lorem Ipsum</p>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-3.jpg') }}" alt="Third slide">
+					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-3.jpg') }}" alt="img/carousel/carousel-3.jpg" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>S.W.A. Security</h5>
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-4.jpg') }}" alt="img/carousel/carousel-4.jpg" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>S.W.A. Security</h5>
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-5.jpg') }}" alt="img/carousel/carousel-5.jpg" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>S.W.A. Security</h5>
 						<p>Lorem Ipsum</p>

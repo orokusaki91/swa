@@ -6,9 +6,9 @@
 <!-- Contact start -->
 <div id="contact">
 	<div class="container">
-		<div class="row">
+		<div class="row ">
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
-				<div class="contact">
+				<div class="contact wow slideInUp">
 					<p class="key">
 						<img src="{{ asset('img/contact/company.png') }}" alt="img/contact/company.png" title="Name" /> Name:
 					</p>
@@ -33,14 +33,14 @@
 					</p>
 					<p class="value">
 						<a href="callto:078 835 36 32" target="_blank">
-							078 835 36 32
+							+41 (0) 78 835 36 32
 						</a>
 					</p>
 				</div>
 			</div>
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
 				<!-- Form start -->
-				<form action="">
+				<form action="" class="wow slideInUp">
 					<h3 class="text-center">Kontaktiere uns</h3>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">

@@ -52,8 +52,8 @@ svg {
 }
 
 /*
-.background-color {
-	background: url("../img/background.jpg") center no-repeat;
+.background {
+	background: url("../img/car-2.jpg") center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -255,6 +255,7 @@ svg {
 
 header {
 	padding: 30px 0;
+/*	background-color: #f2f2f2;*/
 }
 
 header ul {
@@ -445,6 +446,24 @@ header .dropdown-item:hover:not(.active) {
 
 #about-us .item p {
 	margin: 0;
+}
+
+#about-us .carousel-caption {
+	color: #000000;
+	background-color: rgba(230, 230, 230, 0.7);
+	border-radius: 3px;
+}
+
+#about-us .carousel-indicators {
+	bottom: 20px;
+}
+
+#about-us .carousel-indicators li {
+	background-color: #000000;
+}
+
+#about-us .carousel-indicators li.active {
+	background-color: #8c8c8c;
 }
 
 /*----------------------------
@@ -763,7 +782,7 @@ header .dropdown-item:hover:not(.active) {
 
 #jobs .jobs-background {
 	margin-top: 20px;
-	background: url("../img/jobs/jobs.jpg") center no-repeat;
+	background: url("../img/jobs/jobs.jpg") 25% center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100%;
@@ -919,6 +938,7 @@ header .dropdown-item:hover:not(.active) {
 #footer {
 	display: none;
 	padding: 30px 0 15px;
+/*	background-color: #f2f2f2;*/
 }
 
 #footer .social a {

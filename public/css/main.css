@@ -51,13 +51,11 @@ svg {
 	background-size: cover;
 }
 
-
 .background {
 	background: url("../img/car-2.jpg") center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
-
 
 /*----------------------------
     Loader start
@@ -546,6 +544,13 @@ header .dropdown-item:hover:not(.active) {
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#services .service-item:hover {
+	background-color: rgba(242, 242, 242, 0.8);
+	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.75);
 }
 
 #services .service-item p:last-child {

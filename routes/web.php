@@ -15,35 +15,35 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('about_us', function () {
+Route::get('über_uns', function () {
     return view('pages.about_us');
 });
 
-Route::get('services', function () {
+Route::get('dienstleistungen', function () {
     return view('pages.services');
 });
 
-Route::get('guarding', function () {
+Route::get('bewachung', function () {
     return view('pages.guarding');
 });
 
-Route::get('order', function () {
+Route::get('ordnung', function () {
     return view('pages.order');
 });
 
-Route::get('protection', function () {
+Route::get('schutz', function () {
     return view('pages.protection');
 });
 
-Route::get('ocassion', function () {
+Route::get('anlass', function () {
     return view('pages.ocassion');
 });
 
-Route::get('traffic', function () {
+Route::get('verkehr', function () {
     return view('pages.traffic');
 });
 
-Route::get('references', function () {
+Route::get('referenzen', function () {
     return view('pages.references');
 });
 
@@ -55,6 +55,6 @@ Route::get('jobs', function () {
     return view('pages.jobs');
 });
 
-Route::get('contact', function () {
+Route::get('kontakt', function () {
     return view('pages.contact');
 });

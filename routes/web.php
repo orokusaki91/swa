@@ -11,53 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('über_uns', function () {
-    return view('pages.about_us');
-});
-
-Route::get('dienstleistungen', function () {
-    return view('pages.services');
-});
-
-Route::get('bewachung', function () {
-    return view('pages.guarding');
-});
-
-Route::get('ordnung', function () {
-    return view('pages.order');
-});
-
-Route::get('schutz', function () {
-    return view('pages.protection');
-});
-
-Route::get('anlass', function () {
-    return view('pages.ocassion');
-});
-
-Route::get('verkehr', function () {
-    return view('pages.traffic');
-});
-
-Route::get('referenzen', function () {
-    return view('pages.references');
-});
-
-Route::get('partner', function () {
-    return view('pages.partner');
-});
-
-Route::get('jobs', function () {
-    return view('pages.jobs');
-});
-
-Route::get('kontakt', 'ContactController@index');
-
-
+/***** AUTH *****/
 Auth::routes();
 
+/****** FRONT *******/
+Route::get('/', 'HomeController@index');
+Route::get('über_uns', 'AboutController@index');
+Route::get('dienstleistungen', 'ServicesController@index');
+Route::get('referenzen', 'ReferencesController@index');
+Route::get('partner', 'PartnerController@index');
+Route::get('jobs', 'JobsController@index');
+Route::get('kontakt', 'ContactController@index');
+
+/****** ADMIN *******/
 Route::get('/admin', 'Admin\DashboardController@index');
+Route::get('admin/pages/{page}', 'Admin\PagesController@getPage');
+Route::put('admin/pages/update', 'Admin\PagesController@updatePage');
+
+Route::get('{slug}', 'ServicesController@getService');
+
+
+
+

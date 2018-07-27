@@ -15,7 +15,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <!-- Favicon end -->
 <!-- CSS and Bootstrap 4 links start -->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins-css.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css?ver=' . str_random(10)) }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins-css.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css?ver=' . str_random(10)) }}"/>
 <!-- CSS and Bootstrap 4 links end -->

@@ -5,7 +5,11 @@
 	@include('partials._header')
 </head>
 
-<body onload="loader()" class="{{ Route::getCurrentRoute()->uri() == '/' ? 'home-background' : '' }} {{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'background' : '' }}">
+@php
+$var = '../img/car-2.jpg';
+@endphp
+
+<body onload="loader()" style="{{ Route::getCurrentRoute()->uri() == '/' ? 'background: url("storage/uploads/home/' . $home->image . '") center no-repeat;' : '' }} {{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'background: url("storage/uploads/contact/' . $contact->image . '") center no-repeat;' : '' }} background-size: cover; background-attachment: fixed;">
 	<!-- Loader start -->
 	<div id="loader"></div>
 	<!-- Loader end -->

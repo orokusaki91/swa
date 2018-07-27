@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function index() {
-    	return view('pages.contact');
+    	$contact = \App\PageContent::whereHas('page', function ($q) {
+        	$q->where('slug', 'contact');
+    	})->first();
+    	return view('pages.contact', compact('contact'));
     }
 }

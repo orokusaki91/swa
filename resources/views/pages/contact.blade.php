@@ -1,4 +1,12 @@
-@extends('layouts.app') @section('title', 'Kontakt') @section('content')
+@extends('layouts.app') 
+
+@section('title', 'Kontakt') 
+
+@section('styles')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.min.css">
+@stop
+
+@section('content')
 <!-- Contact start -->
 <div id="contact">
 	<div class="container">
@@ -101,4 +109,56 @@
 	</div>
 </div>
 <!-- Contact end -->
+@stop
+
+@section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.all.min.js"></script>
+<script>
+    $(function () {
+        $('#contactForm').submit(function (e) {
+            e.preventDefault();
+            var form = $(this);
+            var formData = form.serialize();
+            var submitButton = form.find('input[type="submit"]');
+            submitButton.attr('disabled', true);
+            $.ajax({
+                url: 'ajax/contact',
+                data: formData,
+                method: 'post',
+                success: function (response) {
+                    // empty all previous errors 
+                    $('.has-error').removeClass('.has-error').text('');
+                    var errors = response.errors;
+                    if ($.isEmptyObject(errors)) {
+                        location.reload();
+                    } else {
+                        submitButton.attr('disabled', false);
+                        // print the errors
+                        $.each(errors, function (key, val) {
+                            var input = form.find('[name="'+ key +'"]');
+                            input.next().addClass('has-error').text(val[0]);
+                        });
+                    }
+                },
+                errors: function() {
+                    location.reload();
+                }
+            });
+        });
+
+        @if(Session::has('success'))
+        swal(
+            'Erledigt!',
+            '{{ Session::get('success') }}',
+            'success'
+            );
+        @elseif(Session::has('error'))
+        swal(
+            'Fehler!',
+            '{{ Session::get('error') }}',
+            'error'
+            );
+        @endif
+    });
+</script>
 @stop

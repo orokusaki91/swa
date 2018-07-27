@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="container">
-	<div id="reset-password">
+	<div id="reset-email">
     	<div class="row">
 			<div class="col-md-6 offset-md-3">
-				<div class="reset-password-div">
+				<div class="reset-email-div">
 					<div class="panel panel-default">
 					
-						<h3 class="panel-heading text-center">Reset Password</h3>
+						<h3 class="panel-heading text-center">Reset Email</h3>
 						<div class="panel-body">
 							@if (session('status'))
 								<div class="alert alert-success">
@@ -38,8 +38,8 @@
 								</div>
 
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary reset-password">
-										Send Password Reset Link
+									<button type="submit" class="btn btn-primary reset-email">
+										Send Email Reset Link
 									</button>
 								</div>
 							</form>

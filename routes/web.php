@@ -60,3 +60,4 @@ Route::get('kontakt', 'ContactController@index');
 
 Auth::routes();
 
+Route::get('/admin', 'Admin\DashboardController@index');

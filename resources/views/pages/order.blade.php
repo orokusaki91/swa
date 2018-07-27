@@ -1,4 +1,4 @@
-@extends('layouts.app') @section('title', 'Order') @section('content')
+@extends('layouts.app') @section('title', 'Ordnung') @section('content')
 
 <!-- Order start -->
 <div id="services">

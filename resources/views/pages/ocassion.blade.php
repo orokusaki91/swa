@@ -1,4 +1,4 @@
-@extends('layouts.app') @section('title', 'ocassion') @section('content')
+@extends('layouts.app') @section('title', 'Anlass') @section('content')
 
 <!-- Ocassion start -->
 <div id="services">

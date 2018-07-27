@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'References')
+@section('title', 'Referenzen')
 
 @section('content')
 <!-- References start -->

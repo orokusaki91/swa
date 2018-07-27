@@ -1,4 +1,4 @@
-@extends('layouts.app') @section('title', 'Guarding') @section('content')
+@extends('layouts.app') @section('title', 'Bewachung') @section('content')
 
 <!-- Guarding start -->
 <div id="services">

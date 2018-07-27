@@ -2,10 +2,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
+	<div id="reset-email">
+    	<div class="row">
+        	<div class="col-md-6 offset-md-3">
+				<div class="reset-password-div">
+            		<div class="panel panel-default">
+                		<h3 class="panel-heading">Reset Password</h3>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
@@ -64,7 +66,9 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 @endsection

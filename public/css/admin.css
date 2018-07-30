@@ -115,7 +115,7 @@ svg {
 
 #side-menu .admin-navbar {
 	margin: 0;
-	background-color: #737373;
+	background-color: #4d4d4d;
 	padding: 15px;
 }
 
@@ -133,6 +133,10 @@ svg {
 #side-menu .admin-navbar li a {
 	font-size: 16px;
 	color: #ffffff;
+}
+
+#side-menu .admin-navbar li a:hover {
+	color: #bfbfbf;
 }
 
 #side-menu #collapse-navbar li {

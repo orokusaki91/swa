@@ -28,7 +28,6 @@ input:focus,
 textarea:focus,
 a:focus {
 	box-shadow: none !important;
-	outline: none !important;
 }
 
 a {
@@ -43,7 +42,6 @@ img {
 svg {
 	font-size: 18px !important;
 }
-
 
 .home-background {
 	background: url("../img/background.png") center no-repeat;
@@ -260,8 +258,46 @@ svg {
 ----------------------------*/
 
 header {
-	padding: 30px 0;
+	padding: 15px 0 30px;
 	background-color: rgba(255, 255, 255, .4);
+}
+
+header .social a {
+	display: inline-block;
+}
+
+header .social-icon {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	transition: all .3s ease;
+}
+
+header .social-icon:last-child {
+	margin-right: 20px;
+}
+
+header #facebook {
+	background: url('../img/social/facebook.png') center no-repeat;
+	background-size: 20px;
+	background-color: #000000;
+	border-radius: 50%;
+	vertical-align: middle;
+	transition: all .3s ease;
+}
+
+header #instagram {
+	background: url('../img/social/instagram.png') center no-repeat;
+	background-size: 20px;
+	background-color: #000000;
+	border-radius: 50%;
+	vertical-align: middle;
+	transition: all .3s ease;
+}
+
+header #facebook:hover,
+header #instagram:hover {
+	background-color: #4d4d4d;
 }
 
 header ul {
@@ -298,7 +334,7 @@ header .nav-item.active a::after {
 	display: inline-block;
 	height: 1em;
 	width: 100%;
-	border-bottom: 2px solid #000000;
+	border-bottom: 2px solid #4B5320;
 	margin-top: 13px;
 }
 
@@ -793,10 +829,19 @@ header .dropdown-item:hover:not(.active) {
 	height: 100%;
 }
 
-#jobs .jobs-background .jobs-div {
+#jobs .jobs-div {
 	color: #ffffff;
 	padding: 50px 0;
 	height: auto;
+}
+
+#jobs .jobs-div .wrapper-black {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 25px;
+}
+
+#jobs .jobs-div .wrapper-black p {
+	margin: 0;
 }
 
 #jobs .positions ul li {
@@ -827,7 +872,7 @@ header .dropdown-item:hover:not(.active) {
 	text-decoration: underline !important;
 }
 
-#jobs .jobs-text {
+#jobs .wrapper-black.down {
 	width: 50%;
 }
 
@@ -1235,12 +1280,8 @@ header .dropdown-item:hover:not(.active) {
 #footer .social-icon {
 	width: 30px;
 	height: 30px;
-	margin-right: 10px;
+	margin: 0 5px;
 	transition: all .3s ease;
-}
-
-#footer .social-icon:last-child {
-	margin-right: 0;
 }
 
 #footer #facebook {
@@ -1471,6 +1512,12 @@ header .dropdown-item:hover:not(.active) {
 ----------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	header {
+		padding-top: 25px;
+	}
+	header .social {
+		padding-bottom: 15px;
+	}
 	header ul {
 		font-size: 14px;
 	}
@@ -1481,7 +1528,7 @@ header .dropdown-item:hover:not(.active) {
 		width: 18px;
 	}
 	header .logo {
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 	header .dropdown-menu.show {
 		right: -45px;

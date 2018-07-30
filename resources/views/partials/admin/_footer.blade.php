@@ -20,5 +20,5 @@
 <a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
 <!-- Back-to-top end -->
 
-@include('partials._scripts')
+@include('partials.admin._scripts')
 @yield('scripts')

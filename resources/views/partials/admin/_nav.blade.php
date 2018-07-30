@@ -12,7 +12,7 @@
 		@endforeach
 	</ul>
 	<li>
-		<a href="/">
+		<a href="{{ url('admin/settings') }}">
 			<i class="fas fa-cogs mr-2"></i>Settings
 		</a>
 	</li>

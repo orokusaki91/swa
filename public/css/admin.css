@@ -103,7 +103,7 @@ svg {
 	border: none;
 	padding: 4px 10px 2px;
 	background-color: #e6e6e6;
-	transition: all .3s ease;
+	transition: all .1s ease;
 }
 
 .admin_panel_head_inner button:hover {
@@ -152,6 +152,15 @@ svg {
 	padding: 8px 0;
 }
 
+#side-menu .admin-navbar li a {
+	font-size: 16px;
+	color: #f2f2f2;
+}
+
+#side-menu .admin-navbar li a:hover {
+	color: #ffffff;
+}
+
 #side-menu .pages[aria-expanded="true"] {
 	background: url("../img/arrow-down.png") right center no-repeat;
 	background-size: 16px;
@@ -166,17 +175,8 @@ svg {
 	cursor: pointer;
 }
 
-#side-menu .admin-navbar li a {
-	font-size: 16px;
-	color: #f2f2f2;
-}
-
-#side-menu .admin-navbar li a:hover {
-	color: #ffffff;
-}
-
 #side-menu svg {
-	width: 16px;
+	width: 14px;
 	vertical-align: text-top;
 }
 
@@ -207,7 +207,7 @@ svg {
 	top: 63px;
 	right: 0;
 	bottom: 0;
-	padding: 15px;
+	padding: 20px 15px;
 	overflow: auto;
 }
 
@@ -235,7 +235,7 @@ svg {
 	cursor: pointer;
 	display: inline-block;
 	overflow: hidden;
-	padding: 10px 20px;
+	padding: 6px 10px;
 	margin-bottom: 15px;
 }
 
@@ -261,6 +261,24 @@ svg {
 .custom-input-file:focus + label,
 .custom-input-file + label:hover {
 	background-color: #3C7AE9;
+}
+
+.btn-submit {
+	padding: 7px 12px 5px;
+	background-color: #e6e6e6;
+	border: none;
+	cursor: pointer;
+	transition: all .1s ease;
+}
+
+.btn-submit:hover {
+	background-color: #d9d9d9;
+}
+
+#mceu_42,
+#mceu_44,
+#mceu_45 {
+	display: none;
 }
 
 /*----------------------------
@@ -340,4 +358,136 @@ svg {
 
 /*----------------------------
     Back-to-top start
+----------------------------*/
+
+#back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 35px;
+	height: 35px;
+	z-index: 998;
+	cursor: pointer;
+	background: url("../img/back-to-top.png") center no-repeat;
+	background-size: 25px;
+	background-color: #000000;
+	border-radius: 50%;
+	transition: all .3s ease;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#back-to-top:hover {
+	background-color: #4d4d4d;
+}
+
+.back-to-top-show {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/*----------------------------
+    Back-to-top end
+----------------------------*/
+
+/* Media queries */
+
+/*----------------------------
+	@media only screen and (max-width: 319px) start
+----------------------------*/
+
+@media only screen and (max-width: 319px) {}
+
+/*----------------------------
+	@media only screen and (max-width: 319px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (max-width: 320px) start
+----------------------------*/
+
+@media only screen and (max-width: 320px) {}
+
+/*----------------------------
+	@media only screen and (max-width: 320px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) end
 ----------------------------*/

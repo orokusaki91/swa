@@ -34,6 +34,9 @@
 		</div>
 		<div id="content">
 			@yield('content')
+			<!-- Back-to-top start -->
+			<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+			<!-- Back-to-top end -->
 		</div>
 		<!-- Push-footer start -->
 		<div class="push-footer"></div>

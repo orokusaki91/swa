@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Page;
+use App\Image;
 use App\PageCode;
 use App\PageContent;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class PagesController extends Controller
 {
@@ -26,21 +28,46 @@ class PagesController extends Controller
     public function updatePage(Request $request)
     {
     	$pageContents = PageContent::where('page_id', $request->page_id)->get();
-        $slug = Page::where('id', $request->page_id)->value('slug');
+        $page = Page::where('id', $request->page_id)->first();
+        $slug = $page->slug;
 
-    	foreach ($pageContents as $key => $pageContent) {
-    		$key = $key+1;
-    		$title = 'title_' . $key;
-    		$image = 'image_' . $key;
-    		$image = uploadImage($request->$image, 'public/uploads/' . $slug);
-    		$text = 'text_' . $key;
-    		$pageContentUpdate = PageContent::findOrFail($pageContent->id);
-    		$pageContentUpdate->title = $request->$title;
-    		$pageContentUpdate->image = $image ? $image : $pageContentUpdate->image;
-    		$pageContentUpdate->text = $request->$text;
-    		$pageContentUpdate->save();
-    	}
+        if ($slug == 'about_us' || $slug == 'references' || $slug == 'partner') {
+            $image = uploadImage($request->images, 'public/uploads/' . $slug, $page);
+            $pageContentUpdate = PageContent::where('page_id', $page->id)->first();
+            $pageContentUpdate->text = $request->text;
+            $pageContentUpdate->save();
+        } else {
+            foreach ($pageContents as $key => $pageContent) {
+                $key = $key+1;
+                $title = 'title_' . $key;
+                $image = 'image_' . $key;
+                $header_text = 'header_text' . $key;
+                $image = uploadImage($request->$image, 'public/uploads/' . $slug, $page);
+                $text = 'text_' . $key;
+                $pageContentUpdate = PageContent::findOrFail($pageContent->id);
+                $pageContentUpdate->title = $request->$title;
+                $pageContentUpdate->text = $request->$text;
+                $pageContentUpdate->image = $request->$image;
+                $pageContentUpdate->header_text = $request->$header_text;
+                $pageContentUpdate->save();
+            }
+        }
 
     	return redirect()->action('Admin\PagesController@getPage', ['page' => $slug]);
+    }
+
+
+    public function deleteImage(Request $request){
+        $media_id = $request->media_id;
+        $media = Image::findOrFail($media_id);
+        $page = Page::findOrFail($request->page_id);
+
+        $storage = Storage::disk($media->storage);
+        if ($storage->has('uploads/' . $page->slug . '/' . $media->path)) {
+            $storage->delete('uploads/' . $page->slug . '/' . $media->path);
+        }
+
+        $media->delete();
+        return ['success'=>1, 'msg'=>trans('app.media_deleted_msg')];
     }
 }

@@ -18,6 +18,7 @@ class CreatePageContentsTable extends Migration
             $table->integer('page_id')->nullable();
             $table->string('title')->nullable();
             $table->string('image')->nullable();
+            $table->text('header_text')->nullable();
             $table->text('text')->nullable();
             $table->integer('page_code_id')->nullable();
             $table->timestamps();

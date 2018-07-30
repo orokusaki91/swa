@@ -27,6 +27,7 @@ Route::get('kontakt', 'ContactController@index');
 Route::get('/admin', 'Admin\DashboardController@index');
 Route::get('admin/pages/{page}', 'Admin\PagesController@getPage');
 Route::put('admin/pages/update', 'Admin\PagesController@updatePage');
+Route::post('admin/delete_image', 'Admin\PagesController@deleteImage')->name('delete_image');
 
 Route::get('{slug}', 'ServicesController@getService');
 

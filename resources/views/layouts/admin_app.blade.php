@@ -29,15 +29,11 @@
 			</div>
 			@endif
 		</nav>
-		<div id="side-menu" class="container-fluid pl-0">
-			<div class="row">
-				<div class="col-md-3">
-					@include('partials.admin._nav')
-				</div>
-				<div class="col-md-9">
-					@yield('content')
-				</div>
-			</div>
+		<div id="side-menu">
+			@include('partials.admin._nav')
+		</div>
+		<div id="content">
+			@yield('content')
 		</div>
 		<!-- Push-footer start -->
 		<div class="push-footer"></div>

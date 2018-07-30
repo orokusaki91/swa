@@ -1,7 +1,7 @@
 <ul class="admin-navbar text-uppercase">
-	<li>
+	<li class="pages" data-toggle="collapse" href="#collapse-navbar" role="button" aria-expanded="false" aria-controls="collapse-navbar">
 		<i class="fas fa-file mr-2"></i>
-		<a data-toggle="collapse" href="#collapse-navbar" role="button" aria-expanded="false" aria-controls="collapse-navbar">Pages<i class="fas fa-caret-down ml-1"></i></a>
+		<a>Pages</a>
 	</li>
 	<ul class="collapse" id="collapse-navbar">
 		@foreach($pages as $page)
@@ -11,8 +11,9 @@
 		@endforeach
 	</ul>
 	<li>
+		<i class="fas fa-cogs mr-2"></i>
 		<a href="{{ url('admin/settings') }}">
-			<i class="fas fa-cogs mr-2"></i>Settings
+			Settings
 		</a>
 	</li>
 </ul>

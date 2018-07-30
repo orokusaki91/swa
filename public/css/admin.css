@@ -80,8 +80,13 @@ svg {
 ----------------------------*/
 
 .admin_panel_head_inner {
-	background-color: #000000;
+	background-color: #172B46;
 	padding: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
 }
 
 .admin_panel_head_inner h3 {
@@ -113,38 +118,101 @@ svg {
     Side-menu start
 ----------------------------*/
 
-#side-menu .admin-navbar {
-	margin: 0;
-	background-color: #4d4d4d;
-	padding: 15px;
+#side-menu {
+	position: fixed;
+	top: 63px;
+	left: 0;
+	bottom: 0;
+	width: 20%;
+	background-color: #2A3F54;
 }
 
-#side-menu svg {
-	width: 14px;
-	vertical-align: text-top;
+#side-menu .admin-navbar {
+	height: 100%;
+	margin: 0;
+	padding: 15px;
+	overflow: auto;
+}
+
+#side-menu .admin-navbar::-webkit-scrollbar-track {
+	background-color: #f2f2f2;
+}
+
+#side-menu .admin-navbar::-webkit-scrollbar {
+	width: 6px;
+}
+
+#side-menu .admin-navbar::-webkit-scrollbar-thumb {
+	background-color: #808080;
 }
 
 #side-menu .admin-navbar li {
 	color: #ffffff;
 	list-style: none;
-	padding: 5px 0;
+	padding: 8px 0;
+}
+
+#side-menu .pages[aria-expanded="true"] {
+	background: url("../img/arrow-down.png") right center no-repeat;
+	background-size: 16px;
+	transition: .1s;
+	cursor: pointer;
+}
+
+#side-menu .pages[aria-expanded="false"] {
+	background: url("../img/arrow.png") right center no-repeat;
+	background-size: 16px;
+	transition: .1s;
+	cursor: pointer;
 }
 
 #side-menu .admin-navbar li a {
 	font-size: 16px;
-	color: #ffffff;
+	color: #f2f2f2;
 }
 
 #side-menu .admin-navbar li a:hover {
-	color: #bfbfbf;
+	color: #ffffff;
+}
+
+#side-menu svg {
+	width: 16px;
+	vertical-align: text-top;
+}
+
+#side-menu #collapse-navbar {
+	padding-left: 45px
 }
 
 #side-menu #collapse-navbar li {
 	list-style: disc;
+	padding: 6px 0;
+}
+
+#side-menu #collapse-navbar li a {
+	font-size: 14px;
 }
 
 /*----------------------------
     Side-menu end
+----------------------------*/
+
+/*----------------------------
+    Content start
+----------------------------*/
+
+#content {
+	position: fixed;
+	width: 80%;
+	top: 63px;
+	right: 0;
+	bottom: 0;
+	padding: 15px;
+	overflow: auto;
+}
+
+/*----------------------------
+    Content end
 ----------------------------*/
 
 /****** Custom Input File ******/

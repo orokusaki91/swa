@@ -1,5 +1,4 @@
 <!-- Footer start -->
-<!--
 <footer id="footer" class="{{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'contact-footer' : '' }}">
 	<div class="container">
 		<div class="social text-center">
@@ -14,7 +13,6 @@
 		</div>
 	</div>
 </footer>
--->
 <!-- Footer end -->
 <!-- Back-to-top start -->
 <a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>

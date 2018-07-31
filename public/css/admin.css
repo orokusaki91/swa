@@ -211,6 +211,14 @@ svg {
 	overflow: auto;
 }
 
+#content .heading {
+	margin-bottom: 15px;
+}
+
+#content .btn-submit {
+	margin-top: 15px;
+}
+
 /*----------------------------
     Content end
 ----------------------------*/
@@ -275,9 +283,15 @@ svg {
 	background-color: #d9d9d9;
 }
 
+/*
 #mceu_42,
 #mceu_44,
 #mceu_45 {
+	display: none;
+}
+*/
+
+.mce-statusbar > .mce-container-body .mce-path {
 	display: none;
 }
 

@@ -12,7 +12,7 @@
             $images = $page->images; 
         @endphp
 
-        <h3 class="mb-3">Titelseite</h3>
+        <h3 class="heading">Titelseite</h3>
         @if($images->count() > 0)
             @foreach($images as $image)
                 <img src="{{ asset('storage/uploads/home/' . $image->path) }}" class="ap_pi">
@@ -25,6 +25,6 @@
         <textarea name="text_1">{{ $home['text'] }}</textarea>
 
         <input type="hidden" name="page_id" value="{{ $page->id }}" />
-        <input class="btn-submit mt-3" type="submit" value="Speichern" />
+        <input class="btn-submit" type="submit" value="Speichern" />
     </form>
 @stop

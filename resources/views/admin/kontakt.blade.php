@@ -15,7 +15,7 @@
         <h3 class="mb-3">Titelseite</h3>
         @if($images->count() > 0)
             @foreach($images as $image)
-                <img src="{{ asset('storage/uploads/contact/' . $image->path) }}" class="ap_pi">
+                <img src="{{ asset('storage/uploads/kontakt/' . $image->path) }}" class="ap_pi">
             @endforeach
         @endif
         <input type="file" id="image_1" name="image_1" class="custom-input-file" />

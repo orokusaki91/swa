@@ -5,7 +5,7 @@
 	<div class="container">
 		<div id="protection">
 			<div class="text-center wow slideInUp">
-				<img src="{{ asset('img/icon/' . getServiceImage()[$page->id] . '.png') }}" class="logo" title="Schutz" alt="img/icon/protection.png" />
+				<img src="{{ asset('img/icon/' . getServiceImage()[$page->id] . '.png') }}" class="logo" title="{{ $page->name }}" alt="{{ $page->name }}" />
 				<h2>{{ $page->name }}</h2>
 			</div>
 			<div class="row">

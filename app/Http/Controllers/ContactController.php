@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function index() {
     	$contact = \App\PageContent::whereHas('page', function ($q) {
-        	$q->where('slug', 'contact');
+        	$q->where('slug', 'kontakt');
     	})->first();
     	return view('pages.contact', compact('contact'));
     }

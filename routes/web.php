@@ -16,17 +16,18 @@ Auth::routes();
 
 /****** FRONT *******/
 Route::get('/', 'HomeController@index');
-Route::get('über_uns', 'AboutController@index');
+Route::get('über-uns', 'AboutController@index');
 Route::get('dienstleistungen', 'ServicesController@index');
 Route::get('referenzen', 'ReferencesController@index');
 Route::get('partner', 'PartnerController@index');
 Route::get('jobs', 'JobsController@index');
 Route::get('kontakt', 'ContactController@index');
+Route::get('impressum', 'ImpressumController@index');
 
 /****** ADMIN *******/
 Route::get('/admin', 'Admin\DashboardController@index');
-Route::get('admin/settings', 'Admin\SettingsController@index');
-Route::put('admin/settings/update', 'Admin\SettingsController@update');
+Route::get('admin/informationen', 'Admin\SettingsController@index');
+Route::put('admin/informationen/update', 'Admin\SettingsController@update');
 Route::get('admin/pages/{page}', 'Admin\PagesController@getPage');
 Route::put('admin/pages/update', 'Admin\PagesController@updatePage');
 Route::post('admin/delete_image', 'Admin\PagesController@deleteImage')->name('delete_image');

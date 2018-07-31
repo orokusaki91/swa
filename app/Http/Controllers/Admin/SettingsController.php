@@ -11,7 +11,7 @@ class SettingsController extends Controller
     public function index()
 	{
 		$user = Auth::user();
-		return view('admin.settings', compact('user'));
+		return view('admin.informationen', compact('user'));
 	}
 
 	public function update(Request $request)

@@ -13,12 +13,12 @@
         @endphp
 
         <h3 class="mb-3">Titelseite</h3>
-
-        <div id="uploaded-ads-image-wrap">
+        
+        <div id="uploaded-images-wrap">
             @if($images->count() > 0)
                 @foreach($images as $img)
-                    <div class="creating-ads-img-wrap">
-                        <img src="{{ asset('storage/uploads/about_us/' . $img->path) }}" class="ap_pi">
+                    <div class="creating-images-wrap">
+                        <img src="{{ asset('storage/uploads/über-uns/' . $img->path) }}" class="ap_pi">
                         <div class="img-action-wrap" id="{{ $img->id }}">
                             <a href="javascript:;" class="imgDeleteBtn"><i class="fa fa-trash"></i> </a>
                         </div>

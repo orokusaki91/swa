@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
-	<form action="{{ url('admin/settings/update') }}" method="post" enctype="multipart/form-data" >
+	<form action="{{ url('admin/informationen/update') }}" method="post" enctype="multipart/form-data" >
         {{ csrf_field() }}
         {{ method_field('PUT') }}
        

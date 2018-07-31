@@ -6,7 +6,7 @@
 <!-- About us start -->
 <div id="about-us">
 	<div class="container">
-		<p class="text mb-5">Die Geschichte und die umfassende Kompetenz der SWA Security GmbH in Bewachungs-, Ordnungs- und Sicherheitsaufgaben gründen auf einer 10jährigen Tradition auf dem Gebiet der Sicherheitsdienstleistungen. Als aktives Mitglied im Verband Schweizerischer Sicherheitsdienstleistungs-Unternehmen VSSU setzt die SWA Security GmbH sehr viel in die Aus- und Weiterbildung der Mitarbeiter.</p>
+		<p class="text mb-5">{!! $aboutUs->text !!}</p>
 		<div id="carousel" class="carousel slide px-0 col-md-10 offset-md-1 mb-5" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -16,27 +16,11 @@
 				<li data-target="#carousel" data-slide-to="4"></li>
 			</ol>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-1.jpg') }}" alt="img/carousel/carousel-1.jpg" />
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-2.jpg') }}" alt="img/carousel/carousel-2.jpg" />
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-3.jpg') }}" alt="img/carousel/carousel-3.jpg" />
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-4.jpg') }}" alt="img/carousel/carousel-4.jpg" />
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('img/carousel/carousel-5.jpg') }}" alt="img/carousel/carousel-5.jpg" />
-<!--
-					<div class="carousel-caption d-none d-md-block">
-						<h5>S.W.A. Security</h5>
-						<p>Lorem Ipsum</p>
+				@foreach($page->images as $key => $image)
+					<div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+						<img class="d-block w-100" src="{{ asset('storage/uploads/über-uns/' . $image->path) }}"/>
 					</div>
--->
-				</div>
+				@endforeach
 			</div>
 			<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 				<i class="fas fa-chevron-left"></i>

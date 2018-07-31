@@ -12,8 +12,8 @@
 						<li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('/') }}">Home</a>
 						</li>
-						<li class="nav-item {{ Request::is('über_uns') ? 'active' : '' }}">
-							<a class="nav-link" href="{{ url('über_uns') }}">Über uns</a>
+						<li class="nav-item {{ Request::is('über-uns') ? 'active' : '' }}">
+							<a class="nav-link" href="{{ url('über-uns') }}">Über uns</a>
 						</li>
 						<li class="nav-item {{ Request::is('dienstleistungen') ? 'active' : '' }}">
 							<a class="nav-link" href="{{ url('dienstleistungen') }}">Dienstleistungen</a>

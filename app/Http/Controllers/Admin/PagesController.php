@@ -22,7 +22,7 @@ class PagesController extends Controller
     	$page = Page::where('slug', $page_slug)->first();
     	$pageContents = PageContent::where('page_id', $page->id)->get()->toArray();
 
-        $page_slug = $pageContents[0]['page_code_id'] == 1 ? 'services' : $page_slug;
+        $page_slug = $pageContents[0]['page_code_id'] == 1 ? 'dienstleinstungen' : $page_slug;
 
         return view('admin.' . $page_slug, compact('page', 'page_slug', 'pageContents'));
     }
@@ -36,7 +36,7 @@ class PagesController extends Controller
 
         $slug = $page->slug;
 
-        if ($slug == 'about_us' || $slug == 'references' || $slug == 'partner') {
+        if ($slug == 'über-uns' || $slug == 'referenzen' || $slug == 'partner') {
             $image = uploadImage($request->images, 'public/uploads/' . $slug, $page);
             $pageContentUpdate = PageContent::where('page_id', $page->id)->first();
             $pageContentUpdate->text = $request->text;
@@ -46,7 +46,7 @@ class PagesController extends Controller
                 $key = $key+1;
                 $title = 'title_' . $key;
                 $image = 'image_' . $key;
-                $header_text = 'header_text' . $key;
+                $header_text = 'header_text_' . $key;
                 $image = uploadImage($request->$image, 'public/uploads/' . $slug, $page);
                 $text = 'text_' . $key;
                 $pageContentUpdate = PageContent::findOrFail($pageContent->id);

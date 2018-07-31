@@ -12,8 +12,6 @@
 	</ul>
 	<li>
 		<i class="fas fa-cogs mr-2"></i>
-		<a href="{{ url('admin/settings') }}">
-			Settings
-		</a>
+		<a href="{{ url('admin/informationen') }}">Informationen</a>
 	</li>
 </ul>

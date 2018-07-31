@@ -9,9 +9,10 @@ class HomeController extends Controller
 {
     public function index()
     {
+    	$page = \App\Page::where('slug', 'home')->first();
     	$home = PageContent::whereHas('page', function ($q) {
         	$q->where('slug', 'home');
     	})->first();
-    	return view('index', compact('home'));
+    	return view('index', compact('home', 'page'));
     }
 }

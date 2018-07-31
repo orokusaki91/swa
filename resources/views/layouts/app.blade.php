@@ -9,7 +9,7 @@
 $var = '../img/car-2.jpg';
 @endphp
 
-<body onload="loader()" style="{{ Route::getCurrentRoute()->uri() == '/' ? 'background: url("storage/uploads/home/' . $home->image . '") center no-repeat;' : '' }} {{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'background: url("storage/uploads/kontakt/' . $contact->image . '") center no-repeat;' : '' }} background-size: cover; background-attachment: fixed;">
+<body onload="loader()" style="{{ Route::getCurrentRoute()->uri() == '/' ? 'background: url("storage/uploads/home/' . $page->images->first()->path . '") center no-repeat;' : '' }} {{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'background: url("storage/uploads/kontakt/' . $contact->image . '") center no-repeat;' : '' }} background-size: cover; background-attachment: fixed;">
 	<!-- Loader start -->
 	<div id="loader"></div>
 	<!-- Loader end -->

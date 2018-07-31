@@ -12,7 +12,9 @@
 					<h3 class="text-center">
 						<a href="{{ url($service->slug) }}">{{ $service->name }}</a>
 					</h3>
-					<p class="service-text">Der Bedarf an temporären Bewachungsdienstleistungen ist vielfältig: Für Infrastrukturen im Freien, beim Auf- und Abbau von Ausstellungsständen oder beim Defekt des Schliesssystems in einem Eingangsbereich, bedeutet eine Objektbewachung garantierte Sicherheit, bis die eigenen Mitarbeitenden wieder zum Rechten schauen oder technische Dienste eintreffen. Um solche Aufgaben zu lösen, ist die SWA Security GmbH flexibel und organisiert. Bei Bedarf sind wir mit Pikettkräften schnell vor Ort und gewährleisten umfassenden Schutz für die erforderliche Zeitdauer.</p>
+					<div class="service-text">
+						{!! \Illuminate\Support\Str::words($service->page_contents->first()->text, 30) !!}
+					</div>
 					<a class="btn btn-readMore" href="{{ url($service->slug) }}" role="button">Alles sehen</a>
 				</div>
 			</div>
@@ -39,4 +41,12 @@
 	</div>
 </div>
 <!-- Services end -->
+@stop
+
+@section('scripts')
+<script>
+	$(function () {
+		$('.service-text').find(':header').remove();
+	});
+</script>
 @stop

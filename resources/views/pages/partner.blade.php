@@ -1,30 +1,24 @@
 @extends('layouts.app')
 
-@section('title', 'Partner')
+@section('title', 'Referenzen')
 
 @section('content')
-<!-- Partner start -->
-<div id="partner">
+<!-- References start -->
+<div id="references">
 	<div class="container">
 		<div class="row wow slideInUp">
-			<div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-4 col-lg-3 mb-5">
-				<h5 class="mb-3">Chesery Club Gstaad</h5>
-				<div class="item">
-					<a href="https://cheseryclub.ch/" target="_blank">
-						<img src="{{ asset('img/partner/chesery.png') }}" class="partner-logo" alt="img/partner/chesery.png" title="Chesery Club" />
-					</a>
+			@foreach($page->page_contents as $partner)
+				<div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-4 col-lg-3 mb-5">
+					<h5 class="mb-3">{{ $partner->title }}</h5>
+					<div class="item">
+						<a href="{{ $partner->text }}" target="_blank">
+							<img src="{{ asset('storage/uploads/' . $page->slug . '/' . $partner->images()->first()->path) }}" class="partner-logo"/>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-4 col-lg-3 mb-5">
-				<h5 class="mb-3">Titan Sicherheit GmbH</h5>
-				<div class="item">
-					<a href="https://www.titan-sicherheit.ch/" target="_blank">
-						<img src="{{ asset('img/partner/titan.png') }}" class="partner-logo" alt="img/partner/titan.png" title="Titan" />
-					</a>
-				</div>
-			</div>
+			@endforeach
 		</div>
 	</div>
 </div>
-<!-- Partner end -->
+<!-- References end -->
 @stop

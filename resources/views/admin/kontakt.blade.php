@@ -7,10 +7,7 @@
         {{ csrf_field() }}
         {{ method_field('PUT') }}
 
-        @php 
-            $home = $pageContents[0];
-            $images = $page->images;
-        @endphp
+        @php $images = $pageContent->images; @endphp
 
         <h3 class="heading">Titelseite</h3>
         @if($images->count() > 0)

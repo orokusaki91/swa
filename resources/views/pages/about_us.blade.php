@@ -16,7 +16,7 @@
 				<li data-target="#carousel" data-slide-to="4"></li>
 			</ol>
 			<div class="carousel-inner">
-				@foreach($page->images as $key => $image)
+				@foreach($aboutUs->images as $key => $image)
 					<div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
 						<img class="d-block w-100" src="{{ asset('storage/uploads/über-uns/' . $image->path) }}"/>
 					</div>

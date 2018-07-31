@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    public function page()
+    public function page_content()
     {
-    	return $this->belongsTo(Page::class);
+    	return $this->belongsTo(PageContent::class);
     }
 }

@@ -1,20 +1,20 @@
 <?php 
 
-function uploadImage($file, $path, $page = null) {
+function uploadImage($file, $path, $page_content = null) {
 	if ($file) {
 		if (is_array($file)) {
 			foreach ($file as $f) {
-				makeImage($f, $path, $page);
+				makeImage($f, $path, $page_content);
 			}
 		} else {
-			makeImage($file, $path, $page);
+			makeImage($file, $path, $page_content);
 		}
 	}
 
 	return false;
 }
 
-function makeImage($file, $path, $page) {
+function makeImage($file, $path, $page_content) {
 	$fileName = $file->hashName();
 	$image = \Image::make($file)->resize(1920, null, function ($constraint) {
 		$constraint->aspectRatio();
@@ -24,7 +24,7 @@ function makeImage($file, $path, $page) {
 
 	// insert image
 	$image = new App\Image;
-	$image->page_id = $page->id;
+	$image->page_content_id = $page_content->id;
 	$image->path = $fileName;
 	$image->save();
 }

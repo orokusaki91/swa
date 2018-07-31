@@ -386,6 +386,29 @@ svg {
     Footer end
 ----------------------------*/
 
+.image-tooltip img {
+	width: auto;
+	height: 50px;
+}
+
+.image-tooltip {
+    text-decoration: none;
+    position: relative;
+}
+.image-tooltip span {
+    display: none;
+}
+.image-tooltip:hover span {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.image-tooltip span img {
+	height: 150px;
+}
+
 /*----------------------------
     Back-to-top start
 ----------------------------*/

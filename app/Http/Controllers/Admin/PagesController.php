@@ -20,41 +20,44 @@ class PagesController extends Controller
 	public function getPage($page_slug)
     {
     	$page = Page::where('slug', $page_slug)->first();
-    	$pageContents = PageContent::where('page_id', $page->id)->get()->toArray();
+    	$pageContents = PageContent::where('page_id', $page->id)->get();
+        $pageContent = $pageContents->first();
 
-        $page_slug = $pageContents[0]['page_code_id'] == 1 ? 'dienstleinstungen' : $page_slug;
+        if ($pageContent) {
+            $page_slug = $pageContents[0]['page_code_id'] == 1 ? 'dienstleinstungen' : $page_slug;
+        }
 
-        return view('admin.' . $page_slug, compact('page', 'page_slug', 'pageContents'));
+        $page_slug = $page_slug == 'referenzen' ? 'partner' : $page_slug;
+
+        return view('admin.' . $page_slug, compact('page', 'page_slug', 'pageContents', 'pageContent'));
     }
 
     public function updatePage(Request $request)
     {
     	$pageContents = PageContent::where('page_id', $request->page_id)->get();
         $page = Page::where('id', $request->page_id)->first();
-
-
-
         $slug = $page->slug;
 
         if ($slug == 'über-uns' || $slug == 'referenzen' || $slug == 'partner') {
-            $image = uploadImage($request->images, 'public/uploads/' . $slug, $page);
-            $pageContentUpdate = PageContent::where('page_id', $page->id)->first();
-            $pageContentUpdate->text = $request->text;
-            $pageContentUpdate->save();
+            $pageContent = PageContent::where('page_id', $page->id)->first();
+            $pageContent->text = $request->text;
+            $pageContent->save();
+
+            $image = uploadImage($request->images, 'public/uploads/' . $slug, $pageContent);
         } else {
             foreach ($pageContents as $key => $pageContent) {
                 $key = $key+1;
                 $title = 'title_' . $key;
                 $image = 'image_' . $key;
                 $header_text = 'header_text_' . $key;
-                $image = uploadImage($request->$image, 'public/uploads/' . $slug, $page);
                 $text = 'text_' . $key;
-                $pageContentUpdate = PageContent::findOrFail($pageContent->id);
-                $pageContentUpdate->title = $request->$title;
-                $pageContentUpdate->text = $request->$text;
-                $pageContentUpdate->image = $request->$image;
-                $pageContentUpdate->header_text = $request->$header_text;
-                $pageContentUpdate->save();
+                $pageContent = PageContent::findOrFail($pageContent->id);
+                $pageContent->title = $request->$title;
+                $pageContent->text = $request->$text;
+                $pageContent->header_text = $request->$header_text;
+                $pageContent->save();
+
+                $image = uploadImage($request->$image, 'public/uploads/' . $slug, $pageContent);
             }
         }
 

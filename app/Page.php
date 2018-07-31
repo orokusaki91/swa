@@ -30,11 +30,6 @@ class Page extends Model
     	return $this->hasMany(PageContent::class);
     }
 
-    public function images()
-    {
-        return $this->hasMany(Image::class);
-    }
-
     public function scopeHasNav($query)
     {
     	return $query->where('has_nav', 1);

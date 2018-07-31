@@ -15,4 +15,9 @@ class PageContent extends Model
     {
     	return $this->hasMany(PageCode::class);
     }
+
+    public function images()
+    {
+    	return $this->hasMany(Image::class);
+    }
 }

@@ -11,10 +11,10 @@
             $pageContent = $pageContents[0];
         @endphp
 
-        <label>Text</label>
+        <label class="d-block">Text</label>
         <textarea name="text_1">{{ $pageContent['text'] }}</textarea>
 
-        <input type="hidden" name="page_id" value="{{ $page->id }}">
-        <input type="submit" value="Speichern">
+        <input type="hidden" name="page_id" value="{{ $page->id }}" />
+        <input class="btn-submit" type="submit" value="Speichern" />
     </form>
 @stop

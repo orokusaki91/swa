@@ -216,12 +216,43 @@ svg {
 }
 
 #content .btn-submit {
-	margin-top: 15px;
+	padding: 7px 12px 5px;
+	margin-top: 25px;
+	background-color: #e6e6e6;
+	border: none;
+	cursor: pointer;
+	transition: all .1s ease;
 }
 
-/*----------------------------
-    Content end
-----------------------------*/
+#content .btn-submit:hover {
+	background-color: #d9d9d9;
+}
+
+#content label.d-block {
+	margin-top: 20px;
+}
+
+#content .creating-images-wrap {
+	padding: 10px 10px 5px;
+	margin-bottom: 15px;
+	margin-right: 11px;
+	border: 1px solid #595959;
+	display: inline-block;
+}
+
+#content .creating-images-wrap img {
+	width: 250px;
+	height: 150px;
+	margin-bottom: 5px;
+}
+
+#content input[name="page_name"] {
+	padding: 3px 4px 1px;
+}
+
+#content label[for="image_1"] {
+	margin-bottom: 0;
+}
 
 /****** Custom Input File ******/
 
@@ -271,29 +302,14 @@ svg {
 	background-color: #3C7AE9;
 }
 
-.btn-submit {
-	padding: 7px 12px 5px;
-	background-color: #e6e6e6;
-	border: none;
-	cursor: pointer;
-	transition: all .1s ease;
+.mce-flow-layout-item.mce-last,
+.mce-label {
+	display: none !important;
 }
 
-.btn-submit:hover {
-	background-color: #d9d9d9;
-}
-
-/*
-#mceu_42,
-#mceu_44,
-#mceu_45 {
-	display: none;
-}
-*/
-
-.mce-statusbar > .mce-container-body .mce-path {
-	display: none;
-}
+/*----------------------------
+    Content end
+----------------------------*/
 
 /*----------------------------
     Footer start

@@ -12,7 +12,7 @@
             $images = $page->images;
         @endphp
 
-        <h3 class="mb-3">Titelseite</h3>
+        <h3 class="heading">Titelseite</h3>
         
         <div id="uploaded-images-wrap">
             @if($images->count() > 0)
@@ -36,11 +36,11 @@
 			<a href="javascript:;" class="image-add-more"><i class="fa fa-plus-circle"></i> Add More</a>
 		</div>
        
-        <label>Text</label>
+        <label class="d-block">Text</label>
         <textarea name="text">{{ $pageContent['text'] }}</textarea>
 
         <input type="hidden" name="page_id" value="{{ $page->id }}" />
-        <input class="btn-submit mt-3" type="submit" value="Speichern" />
+        <input class="btn-submit" type="submit" value="Speichern" />
     </form>
 @stop
 

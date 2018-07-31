@@ -427,6 +427,10 @@ header .dropdown-item:hover:not(.active) {
 	margin-bottom: 30px;
 }
 
+#home p {
+	margin-bottom: 0;
+}
+
 #home #btn-seeAll {
 	color: #4B5320;
 	background-color: transparent;

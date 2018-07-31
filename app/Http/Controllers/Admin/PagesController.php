@@ -22,13 +22,18 @@ class PagesController extends Controller
     	$page = Page::where('slug', $page_slug)->first();
     	$pageContents = PageContent::where('page_id', $page->id)->get()->toArray();
 
-    	return view('admin.' . $page_slug, compact('page', 'page_slug', 'pageContents'));
+        $page_slug = $pageContents[0]['page_code_id'] == 1 ? 'services' : $page_slug;
+
+        return view('admin.' . $page_slug, compact('page', 'page_slug', 'pageContents'));
     }
 
     public function updatePage(Request $request)
     {
     	$pageContents = PageContent::where('page_id', $request->page_id)->get();
         $page = Page::where('id', $request->page_id)->first();
+
+
+
         $slug = $page->slug;
 
         if ($slug == 'about_us' || $slug == 'references' || $slug == 'partner') {
@@ -53,7 +58,13 @@ class PagesController extends Controller
             }
         }
 
-    	return redirect()->action('Admin\PagesController@getPage', ['page' => $slug]);
+        if (isset($pageContents) && $pageContents[0]->page_code_id == 1) {
+            $page->name = $request->page_name;
+            $page->slug = null;
+            $page->save();
+        }
+
+    	return redirect()->action('Admin\PagesController@getPage', ['page' => $page->slug]);
     }
 
 

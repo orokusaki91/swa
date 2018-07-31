@@ -15,12 +15,12 @@ class ServicesController extends Controller
 
     public function getService($slug)
     {
-    	$slug = getServiceLinks()[$slug];
-
-    	$service = \App\PageContent::whereHas('page', function ($q) use ($slug) {
+        $page = \App\Page::where('slug', $slug)->first();
+    	$services = \App\PageContent::whereHas('page', function ($q) use ($slug) {
         	$q->where('slug', $slug);
-    	})->first();
+    	})->get();
 
-    	return view('pages.' . $slug, compact('service'));
+
+    	return view('pages.sub_services', compact('services', 'page'));
     }
 }

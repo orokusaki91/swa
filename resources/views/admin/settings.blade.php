@@ -3,10 +3,12 @@
 @section('title', 'Dashboard')
 
 @section('content')
-	<form action="{{ url('admin/settings/store') }}" method="post" enctype="multipart/form-data" >
+	<form action="{{ url('admin/settings/update') }}" method="post" enctype="multipart/form-data" >
         {{ csrf_field() }}
         {{ method_field('PUT') }}
        
+        <h3>Informationen</h3>
+        
         <label>Name</label>
         <input name="c_name" value="{{ $user->c_name }}">
 

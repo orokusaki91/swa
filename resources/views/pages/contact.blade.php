@@ -48,7 +48,7 @@
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
 				<!-- Form start -->
 				<form action="" class="wow slideInUp">
-					<h3 class="text-center">Kontaktiere sie uns</h3>
+					<h3 class="text-center">Kontaktieren sie uns</h3>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">
 							<div class="input-group-prepend">

@@ -26,7 +26,7 @@ Route::get('kontakt', 'ContactController@index');
 /****** ADMIN *******/
 Route::get('/admin', 'Admin\DashboardController@index');
 Route::get('admin/settings', 'Admin\SettingsController@index');
-Route::post('admin/settings/store', 'Admin\SettingsController@postSettings');
+Route::put('admin/settings/update', 'Admin\SettingsController@update');
 Route::get('admin/pages/{page}', 'Admin\PagesController@getPage');
 Route::put('admin/pages/update', 'Admin\PagesController@updatePage');
 Route::post('admin/delete_image', 'Admin\PagesController@deleteImage')->name('delete_image');

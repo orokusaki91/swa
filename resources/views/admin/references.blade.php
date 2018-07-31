@@ -12,9 +12,6 @@
             $images = $page->images;
         @endphp
 
-        <label>Titel</label>
-        <input name="title_1" value="{{ $pageContent['title'] }}">
-
         <h3>Titelseite</h3>
         <div id="uploaded-ads-image-wrap">
             @if($images->count() > 0)

@@ -29,12 +29,12 @@ function makeImage($file, $path, $page) {
 	$image->save();
 }
 
-function getServiceLinks() {
+function getServiceImage() {
 	return [
-		'bewachung' => 'guarding',
-		'ordnung' => 'order',
-		'schutz' => 'protection',
-		'anlass' => 'ocassion',
-		'verkehr' => 'ocassion',
+		'4' => 'guarding',
+		'5' => 'order',
+		'6' => 'protection',
+		'7' => 'ocassion',
+		'8' => 'traffic',
 	];
 }

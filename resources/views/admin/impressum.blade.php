@@ -8,11 +8,11 @@
         {{ method_field('PUT') }}
 
         @php 
-            $home = $pageContents[0];
+            $pageContent = $pageContents[0];
         @endphp
 
         <label>Text</label>
-        <textarea name="text_1">{{ $home['text'] }}</textarea>
+        <textarea name="text_1">{{ $pageContent['text'] }}</textarea>
 
         <input type="hidden" name="page_id" value="{{ $page->id }}">
         <input type="submit" value="Speichern">

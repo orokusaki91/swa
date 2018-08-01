@@ -43,7 +43,6 @@ Route::post('admin/pages/{partner}/{page_content_id}/delete', 'Admin\PartnerRefe
 
 Route::get('{slug}', 'ServicesController@getService');
 
-
 // Clear Cache facade value:
 // Route::get('/clear-cache', function() {
 // 	$exitCode = Artisan::call('cache:clear');

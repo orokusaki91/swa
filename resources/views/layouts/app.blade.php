@@ -47,7 +47,7 @@ $var = '../img/car-2.jpg';
 			<img class="close" src="{{ asset('img/close.png') }}" onclick="closeNav()" title="Close" alt="img/close.png" />
 			<ul class="mb-sm-3">
 				<li><a href="{{ url ('/') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
-				<li><a href="{{ url ('über_uns') }}" class="{{ Request::is('über_uns') ? 'active' : '' }}">Über<span>uns</span></a></li>
+				<li><a href="{{ url ('über-uns') }}" class="{{ Request::is('über-uns') ? 'active' : '' }}">Über<span>uns</span></a></li>
 				<li><a href="{{ url ('dienstleistungen') }}" class="{{ Request::is('dienstleistungen') ? 'active' : '' }}">Dienstleistungen</a></li>
 				<li><a href="{{ url ('referenzen') }}" class="{{ Request::is('referenzen') ? 'active' : '' }}">Referenzen</a></li>
 				<li><a href="{{ url ('partner') }}" class="{{ Request::is('partner') ? 'active' : '' }}">Partner</a></li>

@@ -9,7 +9,10 @@
 			<a href=" {{ url('impressum') }}">Impressum</a>
 		</div>
 		<div class="copyright text-center">
-			Copyright © 2018 <a href="http://mpsoft.ch/" target="_blank" title="MP Soft">MP Soft</a>. All rights reserved.
+			Copyright © 2018 <span class="font-weight-bold">S.W.A. Security</span>. Alle Rechte vorbehalten.
+		</div>
+		<div class="powered-by text-center">
+			Powered by <a href="http://mpsoft.ch/" target="_blank" title="MP Soft">MP Soft</a>.
 		</div>
 	</div>
 </footer>

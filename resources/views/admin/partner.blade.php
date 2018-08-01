@@ -6,7 +6,8 @@
 @stop
 
 @section('content')
-<a href="{{ url('admin/pages/' . $page->slug . '/create') }}">{{ __('app.create_new_' . $page->slug) }}</a>
+
+<button class="btn-new"><a href="{{ url('admin/pages/' . $page->slug . '/create') }}">Neue {{ $page->slug }} hinzufügen</a></button>
 
 @php $partners = $pageContents; @endphp
 @if($partners->count() > 0)
@@ -36,10 +37,10 @@
                         <td>{{ $partner['title'] }}</td>
                         <td><a href="{{ $partner['text'] }}" target="_blank">{{ $partner['text'] }}</a></td>
                         <td>
-                            <a href="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/edit') }}">Bearbeiten</a>
+                            <button class="btn btn-primary btn-edit mb-1"><a href="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/edit') }}">Bearbeiten</a></button>
                             <form action="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/delete') }}" method="post">
                                 {{ csrf_field() }}
-                                <button type="submit" onclick="return confirm('Sind Sie sicher?')">Löschen</button>
+                                <button class="btn btn-danger btn-delete mt-1" type="submit" onclick="return confirm('Sind Sie sicher?')">Löschen</button>
                             </form>
                         </td>
                     </tr>
@@ -50,7 +51,6 @@
 @else
     <h2>Sie haben momentan keine {{ ucfirst($page->slug) }} vorhanden.</h2>
 @endif
-    
 @stop
 
 @section('scripts')

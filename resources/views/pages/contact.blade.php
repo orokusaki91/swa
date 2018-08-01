@@ -47,7 +47,8 @@
 			</div>
 			<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 mb-5">
 				<!-- Form start -->
-				<form action="" class="wow slideInUp">
+				<form action="{{ url('ajax/contact') }}" method="post" class="wow slideInUp" id="contactForm">
+					{{ csrf_field() }}
 					<h3 class="text-center">Kontaktieren sie uns</h3>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">
@@ -56,8 +57,13 @@
 									<i class="fas fa-user-circle"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="Name" required />
+							<input type="text" class="form-control" placeholder="Name" name="name" />
 						</div>
+						<span>
+                            @if ($errors->has('name'))
+                                {{ $errors->first('name') }}
+                            @endif
+                        </span>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">
@@ -66,8 +72,13 @@
 									<i class="fas fa-envelope"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="Email" required />
+							<input type="text" class="form-control" placeholder="Email" name="email" />
 						</div>
+						<span>
+                            @if ($errors->has('email'))
+                                {{ $errors->first('email') }}
+                            @endif
+                        </span>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">
@@ -76,8 +87,13 @@
 									<i class="fas fa-phone"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="Telefon" required />
+							<input type="text" class="form-control" placeholder="Telefon" name="phone" />
 						</div>
+						<span>
+                            @if ($errors->has('phone'))
+                                {{ $errors->first('phone') }}
+                            @endif
+                        </span>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
 						<div class="input-group">
@@ -86,13 +102,23 @@
 									<i class="fas fa-building"></i>
 								</span>
 							</div>
-							<input type="text" class="form-control" placeholder="Name der Firma" required />
+							<input type="text" class="form-control" placeholder="Name der Firma" name="company_name" />
 						</div>
+						<span>
+                            @if ($errors->has('company_name'))
+                                {{ $errors->first('company_name') }}
+                            @endif
+                        </span>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 mb-3">
-						<div class="form-group">
-							<textarea class="form-control" rows="5" placeholder="Hinterlasse deine Nachricht..."></textarea>
+						<div class="input-group">
+							<textarea class="form-control" rows="5" name="message" placeholder="Hinterlasse deine Nachricht..."></textarea>
 						</div>
+						<span>
+                            @if ($errors->has('message'))
+                                {{ $errors->first('message') }}
+                            @endif
+                        </span>
 					</div>
 					<div class="col-sm-10 offset-sm-1 col-md offset-md-0 col-lg-8 offset-lg-2 text-center">
 						<button type="submit" id="btn-submit" class="btn btn-primary">Einreichen</button>
@@ -119,7 +145,7 @@
             e.preventDefault();
             var form = $(this);
             var formData = form.serialize();
-            var submitButton = form.find('input[type="submit"]');
+            var submitButton = form.find('button');
             submitButton.attr('disabled', true);
             $.ajax({
                 url: 'ajax/contact',
@@ -136,7 +162,7 @@
                         // print the errors
                         $.each(errors, function (key, val) {
                             var input = form.find('[name="'+ key +'"]');
-                            input.next().addClass('has-error').text(val[0]);
+                            input.closest('.input-group').next().addClass('has-error').text(val[0]);
                         });
                     }
                 },

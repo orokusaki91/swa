@@ -117,7 +117,9 @@ return [
     */
 
     'attributes' => [
-        // atributes go here
+        'company_name' => 'Name der Firma',
+        'phone' => 'Telefon',
+        'message' => 'Nachricht',
     ],
 
 ];

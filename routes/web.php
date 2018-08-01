@@ -24,6 +24,8 @@ Route::get('jobs', 'JobsController@index');
 Route::get('kontakt', 'ContactController@index');
 Route::get('impressum', 'ImpressumController@index');
 
+Route::post('ajax/contact', 'ContactController@post');
+
 /****** ADMIN *******/
 Route::get('/admin', 'Admin\DashboardController@index');
 Route::get('admin/informationen', 'Admin\SettingsController@index');

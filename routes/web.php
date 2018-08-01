@@ -44,5 +44,25 @@ Route::post('admin/pages/{partner}/{page_content_id}/delete', 'Admin\PartnerRefe
 Route::get('{slug}', 'ServicesController@getService');
 
 
+// Clear Cache facade value:
+// Route::get('/clear-cache', function() {
+// 	$exitCode = Artisan::call('cache:clear');
+// 	return '<h1>Cache facade value cleared</h1>';
+// });
+// Reoptimized class loader:
+Route::get('/optimize', function() {
+	$exitCode = Artisan::call('optimize');
+	return '<h1>Reoptimized class loader</h1>';
+});
+// Clear Config cache:
+Route::get('/config-cache', function() {
+	$exitCode = Artisan::call('config:cache');
+	return '<h1>Clear Config cleared</h1>';
+});
+// Symbolic link
+Route::get('/symbolic-link', function () {
+	\App::make('files')->link(storage_path('app/public'), '/home/www/web88/html/beatrice/public/storage');
+});
+
 
 

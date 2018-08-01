@@ -1,6 +1,6 @@
 @extends('layouts.admin_app')
 
-@section('title', 'Dashboard')
+@section('title', 'Informationen')
 
 @section('content')
 	<form action="{{ url('admin/informationen/update') }}" method="post" enctype="multipart/form-data" >

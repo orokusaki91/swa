@@ -1,5 +1,6 @@
 @extends('layouts.admin_app')
-@section('title', 'Dienstleistung ändern')
+
+@section('title', 'Admin Seite')
 
 @section('content')
 

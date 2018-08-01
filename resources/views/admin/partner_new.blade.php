@@ -1,6 +1,6 @@
 @extends('layouts.admin_app')
 
-@section('title', 'Dashboard')
+@section('title', 'Admin Seite')
 
 @section('content')
     <form action="{{ url('admin/pages/' . $page->slug . '/store') }}" method="post" enctype="multipart/form-data">

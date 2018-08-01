@@ -6,7 +6,7 @@
 @stop
 
 @section('content')
-<a href="{{ url('admin/pages/' . $page->slug . '/create') }}">Neue {{ $page->slug }} hinzufügen</a>
+<button class="btn-new"><a href="{{ url('admin/pages/' . $page->slug . '/create') }}">Neue {{ $page->slug }} hinzufügen</a></button>
 <table>
     <thead>
         <tr>
@@ -35,10 +35,10 @@
                     <td>{{ $partner['title'] }}</td>
                     <td><a href="{{ $partner['text'] }}" target="_blank">{{ $partner['text'] }}</a></td>
                     <td>
-                        <a href="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/edit') }}">Bearbeiten</a>
+						<button class="btn btn-primary btn-edit mb-1"><a href="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/edit') }}">Bearbeiten</a></button>
                         <form action="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/delete') }}" method="post">
                             {{ csrf_field() }}
-                            <button type="submit" onclick="return confirm('Sind Sie sicher?')">Löschen</button>
+                            <button class="btn btn-danger btn-delete mt-1" type="submit" onclick="return confirm('Sind Sie sicher?')">Löschen</button>
                         </form>
                     </td>
                 </tr>

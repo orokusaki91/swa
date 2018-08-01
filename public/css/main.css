@@ -1325,12 +1325,12 @@ header .dropdown-item:hover:not(.active) {
 	padding-top: 30px;
 }
 
-#footer .copyright a {
+#footer .powered-by a {
 	color: #000000;
 	font-weight: bold;
 }
 
-#footer .copyright a:hover {
+#footer .powered-by a:hover {
 	text-decoration: underline !important;
 }
 

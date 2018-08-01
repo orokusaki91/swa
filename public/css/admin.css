@@ -225,16 +225,18 @@ svg {
 }
 
 #content .btn-submit {
-	padding: 7px 12px 5px;
+	padding: 6px 15px 4px;
+	font-size: 19px;
+	color: #ffffff;
 	margin-top: 25px;
-	background-color: #e6e6e6;
+	background-color: #2a3f54;
 	border: none;
 	cursor: pointer;
 	transition: all .1s ease;
 }
 
 #content .btn-submit:hover {
-	background-color: #d9d9d9;
+	background-color: #223344;
 }
 
 #content label.d-block {
@@ -273,7 +275,9 @@ svg {
 #content input[name="page_name"],
 #content input[name="c_name"],
 #content input[name="c_email"],
-#content input[name="phone"] {
+#content input[name="phone"],
+#content input[name="url_1"],
+#content input[name="title_1"] {
 	padding: 3px 4px 1px;
 	font-size: 18px;
 	margin-top: 15px;
@@ -281,6 +285,42 @@ svg {
 
 #content label[for="image_1"] {
 	margin-bottom: 0;
+}
+
+#content .btn-new {
+	padding: 10px 15px 8px;
+	background-color: #2a3f54;
+	transition: all .1s ease;
+	cursor: pointer;
+	border: none;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+#content tr,
+#content th,
+#content td {
+	border: 1px solid #595959;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+#content .btn-edit a {
+	color: #ffffff;
+}
+
+#content .btn-edit,
+#content .btn-delete {
+	border-radius: 0;
+	min-width: 100px;
+}
+
+#content .btn-new a {
+	color: #ffffff;
+}
+
+#content .btn-new:hover {
+	background-color: #223344;
 }
 
 /****** Custom Input File ******/

@@ -18,20 +18,19 @@
 						<p class="key">
 							<img src="{{ asset('img/contact/company.png') }}" alt="img/contact/company.png" title="Name" /> Firma:
 						</p>
-						<p class="value">SWA Security GmbH</p>
+						<p class="value">{{ $user->c_name }}</p>
 						<p class="key">
 							<img src="{{ asset('img/contact/address.png') }}" alt="img/contact/address.png" title="Adresse" /> Adresse:
 						</p>
-						<p class="value">Postfach 329,
-							<br />Schonegsstrasse 21,
-							<br />3700 Spiez
-						</p>
+						<div class="value">
+							{!! $user->c_address !!}
+						</div>
 						<p class="key">
 							<img src="{{ asset('img/contact/email.png') }}" alt="img/contact/email.png" title="Email" /> Email:
 						</p>
 						<p class="value">
-							<a href="mailto:info@swasecurity.ch" target="_blank">
-							info@swasecurity.ch
+							<a href="mailto:{{ $user->c_email }}" target="_blank">
+								{{ $user->c_email }}
 							</a>
 						</p>
 						<p class="key">
@@ -39,7 +38,7 @@
 						</p>
 						<p class="value">
 							<a href="callto:078 835 36 32" target="_blank">
-							+41 (0) 78 835 36 32
+							{{ $user->c_phone }}
 							</a>
 						</p>
 					</div>

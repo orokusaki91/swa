@@ -11,10 +11,11 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function index() {
+        $user = \App\User::where('name', 'Admin')->first();
     	$contact = \App\PageContent::whereHas('page', function ($q) {
         	$q->where('slug', 'kontakt');
     	})->first();
-    	return view('pages.contact', compact('contact'));
+    	return view('pages.contact', compact('contact', 'user'));
     }
 
     public function post(Request $request) {
@@ -32,7 +33,7 @@ class ContactController extends Controller
 
         if ($validator->passes()) {
             try {
-	            Mail::to('disabledbyfb@gmail.com')->send(new ContactMail($request));
+	            Mail::to('info@swasecurity.ch')->send(new ContactMail($request));
 	        	Session::flash('success', 'Vielen Dank für Ihre Nachricht. Wir melden uns innert 48 Stunden bei Ihnen.');
 	        } catch (Exception $e) {
 	            Session::flash('error', 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.');

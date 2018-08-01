@@ -6,7 +6,7 @@
 			<a href="https://www.instagram.com" id="instagram" class="social-icon" title="Instagram"></a>
 		</div>
 		<div class="links text-center text-uppercase">
-			<a href=" {{ url('impressum') }}">Impressum</a>
+			<a href=" {{ url('impressum') }}" style="font-size: 12px;">Impressum</a>
 		</div>
 		<div class="copyright text-center">
 			Copyright © 2018 <span class="font-weight-bold">S.W.A. Security</span>. Alle Rechte vorbehalten.

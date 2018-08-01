@@ -61,7 +61,7 @@ Route::get('/config-cache', function() {
 });
 // Symbolic link
 Route::get('/symbolic-link', function () {
-	\App::make('files')->link(storage_path('app/public'), '/home/www/web88/html/beatrice/public/storage');
+	\App::make('files')->link(storage_path('app/public'), '/home/swasecur/www/swasecurity.ch/public/storage');
 });
 
 

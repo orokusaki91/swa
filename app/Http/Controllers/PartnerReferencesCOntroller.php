@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PartnerReferencesCOntroller extends Controller
+class PartnerReferencesController extends Controller
 {
     public function index() {
     	$slug = \Request::is('partner') ? 'partner' : 'referenzen';

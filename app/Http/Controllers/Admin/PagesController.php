@@ -76,12 +76,12 @@ class PagesController extends Controller
         $media = Image::findOrFail($media_id);
         $page = Page::findOrFail($request->page_id);
 
-        $storage = Storage::disk($media->storage);
-        if ($storage->has('uploads/' . $page->slug . '/' . $media->path)) {
-            $storage->delete('uploads/' . $page->slug . '/' . $media->path);
+        if (Storage::has('public/uploads/' . $page->slug . '/' . $media->path)) {
+            Storage::delete('public/uploads/' . $page->slug . '/' . $media->path);
         }
 
         $media->delete();
+        
         return ['success'=>1, 'msg'=>trans('app.media_deleted_msg')];
     }
 }

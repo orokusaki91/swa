@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Login')
+
 @section('content')
 <div class="container">
 	<div id="login">
@@ -38,7 +40,7 @@
 												<i class="fas fa-lock"></i>
 											</span>
 										</div>
-										<input id="password" type="password" class="form-control" name="password" placeholder="Password" required />
+										<input id="password" type="password" class="form-control" name="password" placeholder="Passwort" required />
 									</div>
 
 									@if ($errors->has('password'))
@@ -51,13 +53,13 @@
 								<div class="form-group remember">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+											<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Logindaten merken
 										</label>
 									</div>
 								</div>
 								<div class="forgot-password text-md-center">
 									<a class="btn btn-link" href="{{ route('password.request') }}">
-										Forgot Your Password?
+										Passwort vergessen?
 									</a>
 								</div>
 								<button type="submit" class="btn btn-primary login">Login</button>

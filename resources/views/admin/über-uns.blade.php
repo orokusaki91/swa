@@ -9,7 +9,7 @@
 
         @php $images = $pageContent->images; @endphp
 
-        <h3 class="heading">Titelseite</h3>
+        <h3 class="heading">Titelbild</h3>
         
         <div id="uploaded-images-wrap">
             @if($images->count() > 0)
@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="image-ad-more-wrap mb-3">
-			<a href="javascript:;" class="image-add-more"><i class="fa fa-plus-circle"></i> Add More</a>
+			<a href="javascript:;" class="image-add-more"><i class="fa fa-plus-circle"></i> Bild hinzufügen</a>
 		</div>
        
         <label class="d-block">Text</label>
@@ -59,7 +59,7 @@
             data: { media_id : img_id, page_id: page_id, _token : '{{ csrf_token() }}' },
             success : function (data) {
                 if (data.success == 1){
-                    current_selector.closest('.creating-ads-img-wrap').hide('slow');
+                    current_selector.closest('.creating-images-wrap').hide('slow');
                 }
             }
         });

@@ -136,37 +136,37 @@ svg {
 	background-color: #2A3F54;
 }
 
-#side-menu .admin-navbar {
+#side-menu #admin-navbar {
 	height: 100%;
 	margin: 0;
 	padding: 15px;
 	overflow: auto;
 }
 
-#side-menu .admin-navbar::-webkit-scrollbar-track {
+#side-menu #admin-navbar::-webkit-scrollbar-track {
 	background-color: #f2f2f2;
 }
 
-#side-menu .admin-navbar::-webkit-scrollbar {
+#side-menu #admin-navbar::-webkit-scrollbar {
 	width: 6px;
 }
 
-#side-menu .admin-navbar::-webkit-scrollbar-thumb {
+#side-menu #admin-navbar::-webkit-scrollbar-thumb {
 	background-color: #808080;
 }
 
-#side-menu .admin-navbar li {
+#side-menu #admin-navbar li {
 	color: #ffffff;
 	list-style: none;
 	padding: 8px 0;
 }
 
-#side-menu .admin-navbar li a {
+#side-menu #admin-navbar li a {
 	font-size: 16px;
 	color: #f2f2f2;
 }
 
-#side-menu .admin-navbar li a:hover {
+#side-menu #admin-navbar li a:hover {
 	color: #ffffff;
 }
 
@@ -533,7 +533,60 @@ svg {
 	@media only screen and (max-width: 320px) start
 ----------------------------*/
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+	.admin_panel_head_inner {
+		position: static;
+	}
+	.admin_panel_head_inner h3 {
+		margin-bottom: 10px;
+	}
+	#content {
+		position: static;
+		padding: 15px;
+		width: auto;
+	}
+	#side-menu {
+		top: 0;
+		width: 0;
+		z-index: 999;
+		transition: all .2s linear;
+	}
+	#side-menu #admin-navbar {
+/*		display: none;*/
+		transition: all .4s linear;
+		padding: 0;
+	}
+	#app .side-nav-icon {
+		background-color: #2A3F54;
+		position: fixed;
+		top: 50px;
+		left: 15px;
+		z-index: 9999;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+	}
+	#side-menu .close {
+		position: absolute;
+		top: 50px;
+		left: 15px;
+		width: 25px;
+		height: 25px;
+		z-index: 0;
+		cursor: pointer;
+		text-shadow: none;
+		opacity: 1;
+	}
+	#content .large-img {
+		width: 100%;
+	}
+	#content .creating-images-wrap {
+		width: 100%;
+	}
+	#content table {
+		margin-right: 15px;
+	}
+}
 
 /*----------------------------
 	@media only screen and (max-width: 320px) end

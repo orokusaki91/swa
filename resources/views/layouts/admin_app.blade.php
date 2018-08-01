@@ -11,11 +11,12 @@
 
 	<!-- App start -->
 	<div id="app">
+		<img class="side-nav-icon" src="{{ asset('img/side-menu.png') }}" onclick="openNav()" title="Side nav" alt="img/side-menu.png" />
 		<nav>  
 			@if(Auth::check())
 			<div class="admin_panel_head_inner">
 				<div class="row align-items-center">
-					<div class="col-md-6">
+					<div class="col-md-6 text-center text-md-left">
 						<h3><a href="{{ url('admin') }}">S.W.A. Security Admin</a></h3>
 					</div>
 					<div class="col-md-6 text-right">			

@@ -997,6 +997,10 @@ header .dropdown-item:hover:not(.active) {
 	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
+#contact .has-error {
+	color: #ff0000;
+}
+
 /*----------------------------
     Contact end
 ----------------------------*/

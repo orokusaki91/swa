@@ -35,7 +35,7 @@
                             </div>
                         </td>
                         <td>{{ $partner['title'] }}</td>
-                        <td><a href="{{ $partner['text'] }}" target="_blank">{{ $partner['text'] }}</a></td>
+                        <td><a href="{{ $partner['text'] }}" target="_blank" class="website">{{ $partner['text'] }}</a></td>
                         <td>
                             <button class="btn btn-primary btn-edit mb-1"><a href="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/edit') }}">Bearbeiten</a></button>
                             <form action="{{ url('admin/pages/' . $page->slug . '/' . $partner['id'] . '/delete') }}" method="post">

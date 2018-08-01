@@ -305,11 +305,11 @@ svg {
 	vertical-align: middle;
 }
 
-#content td a {
+#content td .website {
 	color: #000000;
 }
 
-#content td a:hover {
+#content td .website:hover {
 	text-decoration: underline !important;
 }
 

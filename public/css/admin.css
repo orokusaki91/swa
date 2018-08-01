@@ -305,6 +305,14 @@ svg {
 	vertical-align: middle;
 }
 
+#content td a {
+	color: #000000;
+}
+
+#content td a:hover {
+	text-decoration: underline !important;
+}
+
 #content .btn-edit a {
 	color: #ffffff;
 }

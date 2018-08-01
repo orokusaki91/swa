@@ -43,7 +43,6 @@ function openNav() {
 		document.getElementById("side-menu").style.width = "70%";
 		document.getElementById("close-nav").style.width = "100%";
 	}
-//	document.getElementById("admin-navbar").style.display = "block";
 	document.body.style.overflowY = "hidden";
 }
 

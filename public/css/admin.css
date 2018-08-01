@@ -133,40 +133,41 @@ svg {
 	left: 0;
 	bottom: 0;
 	width: 20%;
+	height: 100%;
 	background-color: #2A3F54;
 }
 
-#side-menu #admin-navbar {
+#side-menu .admin-navbar {
 	height: 100%;
-	margin: 0;
-	padding: 15px;
+	margin: 15px;
+	padding: 0;
 	overflow: auto;
 }
 
-#side-menu #admin-navbar::-webkit-scrollbar-track {
+#side-menu .admin-navbar::-webkit-scrollbar-track {
 	background-color: #f2f2f2;
 }
 
-#side-menu #admin-navbar::-webkit-scrollbar {
+#side-menu .admin-navbar::-webkit-scrollbar {
 	width: 6px;
 }
 
-#side-menu #admin-navbar::-webkit-scrollbar-thumb {
+#side-menu .admin-navbar::-webkit-scrollbar-thumb {
 	background-color: #808080;
 }
 
-#side-menu #admin-navbar li {
+#side-menu .admin-navbar li {
 	color: #ffffff;
 	list-style: none;
 	padding: 8px 0;
 }
 
-#side-menu #admin-navbar li a {
+#side-menu .admin-navbar li a {
 	font-size: 16px;
 	color: #f2f2f2;
 }
 
-#side-menu #admin-navbar li a:hover {
+#side-menu .admin-navbar li a:hover {
 	color: #ffffff;
 }
 
@@ -295,6 +296,10 @@ svg {
 	border: none;
 	margin-top: 5px;
 	margin-bottom: 30px;
+}
+
+#content table {
+	width: 100%;
 }
 
 #content tr,
@@ -517,6 +522,25 @@ svg {
     Back-to-top end
 ----------------------------*/
 
+/*----------------------------
+    Close-nav start
+----------------------------*/
+
+#close-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 100%;
+	z-index: 998;
+	background-color: rgba(41, 48, 59, .55);
+}
+
+/*----------------------------
+    Close-nav end
+----------------------------*/
+
 /* Media queries */
 
 /*----------------------------
@@ -534,8 +558,18 @@ svg {
 ----------------------------*/
 
 @media only screen and (max-width: 320px) {
+	#app {
+		padding-top: 106px;
+	}
+	.side-nav-icon {
+		position: absolute;
+		bottom: 15px;
+		left: 15px;
+		width: 25px;
+		z-index: 9998;
+	}
 	.admin_panel_head_inner {
-		position: static;
+		position: fixed;
 	}
 	.admin_panel_head_inner h3 {
 		margin-bottom: 10px;
@@ -546,34 +580,21 @@ svg {
 		width: auto;
 	}
 	#side-menu {
+		position: fixed;
 		top: 0;
 		width: 0;
-		z-index: 999;
-		transition: all .2s linear;
-	}
-	#side-menu #admin-navbar {
-/*		display: none;*/
-		transition: all .4s linear;
-		padding: 0;
-	}
-	#app .side-nav-icon {
-		background-color: #2A3F54;
-		position: fixed;
-		top: 50px;
-		left: 15px;
 		z-index: 9999;
-		width: 30px;
-		height: 30px;
-		padding: 5px;
+		transition: all .3s linear;
+		overflow: auto;
+	}
+	#side-menu .admin-navbar {
+		margin-top: 50px;
 	}
 	#side-menu .close {
 		position: absolute;
-		top: 50px;
-		left: 15px;
+		top: 15px;
+		right: 15px;
 		width: 25px;
-		height: 25px;
-		z-index: 0;
-		cursor: pointer;
 		text-shadow: none;
 		opacity: 1;
 	}
@@ -583,8 +604,22 @@ svg {
 	#content .creating-images-wrap {
 		width: 100%;
 	}
-	#content table {
+	#content .table-div {
+		width: 100%;
 		margin-right: 15px;
+	}
+	#content input[name="c_name"],
+	#content input[name="c_email"],
+	#content input[name="phone"],
+	#content input[name="url_1"],
+	#content input[name="title_1"] {
+		float: right;
+		width: 180px;
+		margin: 0;
+	}
+	#content .form-input {
+		clear: both;
+		margin: 10px 0;
 	}
 }
 
@@ -596,7 +631,61 @@ svg {
 	@media only screen and (min-width: 320px) and (max-width: 767px) start
 ----------------------------*/
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	#app {
+		padding-top: 106px;
+	}
+	.side-nav-icon {
+		position: absolute;
+		bottom: 15px;
+		left: 15px;
+		width: 25px;
+		z-index: 9998;
+	}
+	.admin_panel_head_inner {
+		position: fixed;
+	}
+	.admin_panel_head_inner h3 {
+		margin-bottom: 10px;
+	}
+	#content {
+		position: static;
+		padding: 15px;
+		width: auto;
+	}
+	#side-menu {
+		position: fixed;
+		top: 0;
+		width: 0;
+		z-index: 9999;
+		transition: all .3s linear;
+		overflow: auto;
+	}
+	#side-menu .admin-navbar {
+		margin-top: 50px;
+	}
+	#side-menu .close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 25px;
+		text-shadow: none;
+		opacity: 1;
+	}
+	#content .large-img {
+		width: 100%;
+	}
+	#content .creating-images-wrap .thumb-img {
+		height: 190px;
+	}
+	#content .creating-images-wrap {
+		width: 47%;
+	}
+	#content .table-div {
+		width: 100%;
+		margin-right: 15px;
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) end
@@ -616,7 +705,11 @@ svg {
 	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
 ----------------------------*/
 
-@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	#content .large-img {
+		width: 75%;
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
@@ -626,7 +719,17 @@ svg {
 	@media only screen and (min-width: 768px) and (max-width: 1024px) start
 ----------------------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#side-menu {
+		width: 30%;
+	}
+	#content {
+		width: 70%;
+	}
+	#content .creating-images-wrap {
+		width: 47%;
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1024px) end
@@ -636,7 +739,11 @@ svg {
 	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
 ----------------------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	#side-menu {
+		overflow: scroll;
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end

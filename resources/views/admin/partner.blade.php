@@ -12,6 +12,7 @@
 
 @php $partners = $pageContents; @endphp
 @if($partners->count() > 0)
+<div class="table-div">
     <table>
         <thead>
             <tr>
@@ -49,6 +50,7 @@
             
         </tbody>
     </table>
+</div>
 @else
     <h2>Sie haben momentan keine {{ ucfirst($page->slug) }} vorhanden.</h2>
 @endif

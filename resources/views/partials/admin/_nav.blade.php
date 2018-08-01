@@ -1,5 +1,4 @@
-<ul id="admin-navbar" class="admin-navbar text-uppercase">
-	<img class="close d-md-none" src="{{ asset('img/close.png') }}" onclick="closeNav()" title="Close" alt="img/close.png" />
+<ul class="admin-navbar text-uppercase">
 	<li class="pages" data-toggle="collapse" href="#collapse-navbar" role="button" aria-expanded="false" aria-controls="collapse-navbar">
 		<i class="fas fa-file mr-2"></i>
 		<a>Pages</a>

@@ -19,7 +19,7 @@ function makeImage($file, $path, $page_content) {
 	$image = \Image::make($file)->resize(1920, null, function ($constraint) {
 		$constraint->aspectRatio();
 	});
-	$image = (string)$image->encode('jpg', 75);
+	$image = (string)$image->encode($file->getClientOriginalExtension(), 75);
 	Storage::put($path . '/'. $fileName, $image);
 
 	// insert image

@@ -52,6 +52,17 @@ class PartnerReferencesController extends Controller
         $pageContent->text = $request->url_1;
         $pageContent->save();
 
+        $image = $pageContent->images()->first();
+
+        // remove old picture
+        if ($image) {
+            $image->delete();
+            if (Storage::has('public/uploads/' . $slug . '/' . $image->path)) {
+                // dd('removed');
+                Storage::delete('public/uploads/' . $slug . '/' . $image->path);
+            }
+        }
+
         $image = uploadImage($request->image_1, 'public/uploads/' . $slug, $pageContent);
 
         return redirect()->action('Admin\PagesController@getPage', ['page_slug' => $slug]);

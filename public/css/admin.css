@@ -106,6 +106,15 @@ svg {
 	transition: all .1s ease;
 }
 
+.admin_panel_head_inner .logout {
+	font-size: 18px;
+}
+
+.admin_panel_head_inner svg {
+	width: 16px !important;
+	vertical-align: text-top;
+}
+
 .admin_panel_head_inner button:hover {
 	background-color: #d9d9d9;
 }
@@ -230,6 +239,13 @@ svg {
 
 #content label.d-block {
 	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#content label.mr-1 {
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #content .creating-images-wrap {
@@ -238,16 +254,29 @@ svg {
 	margin-right: 11px;
 	border: 1px solid #595959;
 	display: inline-block;
+	width: 30%;
 }
 
-#content .creating-images-wrap img {
-	width: 250px;
-	height: 150px;
+#content .large-img {
+	display: block;
+	padding: 10px;
+	border: 1px solid #595959;
+	width: 60%;
+	margin-bottom: 15px;
+}
+
+#content .creating-images-wrap .thumb-img {
+	height: 180px;
 	margin-bottom: 5px;
 }
 
-#content input[name="page_name"] {
+#content input[name="page_name"],
+#content input[name="c_name"],
+#content input[name="c_email"],
+#content input[name="phone"] {
 	padding: 3px 4px 1px;
+	font-size: 18px;
+	margin-top: 15px;
 }
 
 #content label[for="image_1"] {
@@ -300,11 +329,6 @@ svg {
 .custom-input-file:focus + label,
 .custom-input-file + label:hover {
 	background-color: #3C7AE9;
-}
-
-.mce-flow-layout-item.mce-last,
-.mce-label {
-	display: none !important;
 }
 
 /*----------------------------
@@ -392,17 +416,19 @@ svg {
 }
 
 .image-tooltip {
-    text-decoration: none;
-    position: relative;
+	text-decoration: none;
+	position: relative;
 }
+
 .image-tooltip span {
-    display: none;
+	display: none;
 }
+
 .image-tooltip:hover span {
-    display: block;
-    position: fixed;
-    overflow: hidden;
-    z-index: 1;
+	display: block;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
 }
 
 .image-tooltip span img {

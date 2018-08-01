@@ -15,6 +15,7 @@
         /* theme of the editor */
         theme: "modern",
         skin: "lightgray",
+		branding: false,
 
 
         /* width and height of the editor */
@@ -38,6 +39,7 @@
             editor.on('change load', function() {
                 var iframeBodyMCE = $(tinymce.$(document.body)[0]).find('iframe').contents().find('#tinymce');
                 iframeBodyMCE.find('span').css('color', '#000');
+                iframeBodyMCE.find('a').css('color', '#000');
                 iframeBodyMCE.children().css('color', '#000');
             });
         },

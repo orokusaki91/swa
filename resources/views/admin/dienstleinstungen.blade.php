@@ -9,7 +9,7 @@
 
         <h3 class="heading">{{ $page->name }}</h3>
 
-        <label>Titel</label>
+        <label class="mr-1">Titel:</label>
         <input name="page_name" value="{{ $page->name }}" />
         
         @php $i = 1; @endphp

@@ -21,8 +21,7 @@
 					<div class="col-md-6 text-right">			
 						<form action="{{ url('logout') }}" method="post">
 							{{ csrf_field() }}
-							<button type="submit">Log out</button>
-							<button type="submit" class="fa-power-off2"><i class="fa fa-power-off" aria-hidden="true"></i></button>
+							<button type="submit"><i class="fas fa-power-off mr-2" aria-hidden="true"></i><span class="logout">Log out</span></button>
 						</form>
 					</div>
 				</div>

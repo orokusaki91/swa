@@ -7,20 +7,20 @@
         {{ csrf_field() }}
         {{ method_field('PUT') }}
        
-        <h3>Informationen</h3>
+        <h3 class="heading">Informationen</h3>
         
         <label>Name</label>
-        <input name="c_name" value="{{ $user->c_name }}">
+        <input name="c_name" value="{{ $user->c_name }}" />
 
-		<label>Address</label>
+		<label class="d-block">Address</label>
         <textarea name="c_address">{{ $user->c_address }}</textarea>
 
         <label>Email</label>
         <input name="c_email" value="{{ $user->c_email }}">
 
         <label>Phone</label>
-        <input name="c_phone" value="{{ $user->c_phone }}">
+        <input name="c_phone" value="{{ $user->c_phone }}" />
 
-        <input type="submit" value="Speichern">
+        <input class="btn-submit d-block" type="submit" value="Speichern" />
     </form>
 @stop

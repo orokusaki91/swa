@@ -15,7 +15,7 @@
             @if($images->count() > 0)
                 @foreach($images as $img)
                     <div class="creating-images-wrap">
-                        <img src="{{ asset('storage/uploads/über-uns/' . $img->path) }}" class="ap_pi">
+                        <img src="{{ asset('storage/uploads/über-uns/' . $img->path) }}" class="ap_pi thumb-img">
                         <div class="img-action-wrap" id="{{ $img->id }}">
                             <a href="javascript:;" class="imgDeleteBtn"><i class="fa fa-trash"></i> </a>
                         </div>

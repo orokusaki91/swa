@@ -1,5 +1,8 @@
-@extends('layouts.app') @section('title', 'Schutz') @section('content')
+@extends('layouts.app') 
 
+@section('title', $page->name) 
+
+@section('content')
 <!-- Protection start -->
 <div id="services">
 	<div class="container">

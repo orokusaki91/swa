@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Passwort zurücksetzen')
+
 @section('content')
 <div class="container">
 	<div id="reset-password">
@@ -8,7 +10,7 @@
 				<div class="reset-password-div">
             		<div class="panel panel-default">
 						
-                		<h3 class="panel-heading text-center">Reset Password</h3>
+                		<h3 class="panel-heading text-center">Passwort zurücksetzen</h3>
 						<div class="panel-body">
 							<form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
 								{{ csrf_field() }}
@@ -40,7 +42,7 @@
 											</span>
 										</div>
 										
-										<input id="password" type="password" class="form-control" name="password" placeholder="Password" required />
+										<input id="password" type="password" class="form-control" name="password" placeholder="Passwort" required />
 									</div>
 
 									@if ($errors->has('password'))
@@ -57,7 +59,7 @@
 												<i class="fas fa-envelope"></i>
 											</span>
 										</div>
-										<input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm password" required />
+										<input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Passwort bestätigen" required />
 									</div>
 
 									@if ($errors->has('password_confirmation'))
@@ -69,7 +71,7 @@
 
 								<div class="form-group">
 									<button type="submit" class="btn btn-primary reset-password">
-										Send Password Reset Link
+										Passwort zurücksetzen
 									</button>
 								</div>
 							</form>

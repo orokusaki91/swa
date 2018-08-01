@@ -16,7 +16,7 @@
 					<h3 class="text-center">Informationen</h3>
 					<div class="information">
 						<p class="key">
-							<img src="{{ asset('img/contact/company.png') }}" alt="img/contact/company.png" title="Name" /> Name:
+							<img src="{{ asset('img/contact/company.png') }}" alt="img/contact/company.png" title="Name" /> Firma:
 						</p>
 						<p class="value">SWA Security GmbH</p>
 						<p class="key">

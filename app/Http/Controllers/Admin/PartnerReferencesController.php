@@ -60,7 +60,15 @@ class PartnerReferencesController extends Controller
     public function deletePartner(Request $request, $slug, $page_content_id)
     {
         $partner = PageContent::findOrFail($page_content_id);
+        $image = $partner->images()->first();
+
+        if (Storage::has('public/uploads/' . $slug . '/' . $image->path)) {
+            Storage::delete('public/uploads/' . $slug . '/' . $image->path);
+        }
+        
         $partner->delete();
+        $image->delete();
+
         return redirect()->action('Admin\PagesController@getPage', ['page_slug' => $slug]);
     }
 }

@@ -9,7 +9,7 @@
        
         <h3 class="heading">Informationen</h3>
         
-        <label>Name</label>
+        <label>Firma</label>
         <input name="c_name" value="{{ $user->c_name }}" />
 
 		<label class="d-block">Address</label>

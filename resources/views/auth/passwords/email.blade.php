@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Passwort zurücksetzen')
+
 @section('content')
 <div class="container">
 	<div id="reset-email">
@@ -8,11 +10,11 @@
 				<div class="reset-email-div">
 					<div class="panel panel-default">
 					
-						<h3 class="panel-heading text-center">Reset Email</h3>
+						<h3 class="panel-heading text-center">Passwort zurücksetzen</h3>
 						<div class="panel-body">
 							@if (session('status'))
 								<div class="alert alert-success">
-									{{ session('status') }}
+									Passworterinnerung wurde gesendet! Sie erhalten in Kürze ein neues Passwort.
 								</div>
 							@endif
 
@@ -39,7 +41,7 @@
 
 								<div class="form-group">
 									<button type="submit" class="btn btn-primary reset-email">
-										Send Email Reset Link
+										Passwort anfordern
 									</button>
 								</div>
 							</form>

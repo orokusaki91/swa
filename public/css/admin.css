@@ -43,6 +43,10 @@ svg {
 	font-size: 18px !important;
 }
 
+.has-error {
+	color: #ff0000;
+}
+
 /*----------------------------
     Loader start
 ----------------------------*/
@@ -194,7 +198,8 @@ svg {
 	padding-left: 45px
 }
 
-#side-menu #collapse-navbar li {
+#side-menu #collapse-navbar li,
+#side-menu #collapse-navbar-settings li {
 	list-style: disc;
 	padding: 6px 0;
 }

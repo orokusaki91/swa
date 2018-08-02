@@ -10,8 +10,16 @@
 		</li>
 		@endforeach
 	</ul>
-	<li>
+	<li class="pages" data-toggle="collapse" href="#collapse-navbar-settings" role="button" aria-expanded="false" aria-controls="collapse-navbar-settings">
 		<i class="fas fa-cogs mr-2"></i>
-		<a href="{{ url('admin/informationen') }}">Informationen</a>
+		<a>Einstellungen</a>
 	</li>
+	<ul class="collapse" id="collapse-navbar-settings">
+		<li>
+			<a href="{{ url('admin/informationen') }}">Informationen</a>
+		</li>
+		<li>
+			<a href="{{ url('admin/soziales-netzwerk') }}">Soziales Netzwerk</a>
+		</li>
+	</ul>
 </ul>

@@ -38,7 +38,7 @@ class PagesController extends Controller
         $page = Page::where('id', $request->page_id)->first();
         $slug = $page->slug;
 
-        if ($slug == 'über-uns' || $slug == 'referenzen' || $slug == 'partner') {
+        if ($slug == 'über-uns') {
             $pageContent = PageContent::where('page_id', $page->id)->first();
             $pageContent->text = $request->text;
             $pageContent->save();

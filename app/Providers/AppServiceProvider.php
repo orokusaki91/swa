@@ -19,6 +19,12 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('partials.admin._nav', function ($view) {
             $view->with('pages', \App\Page::all());
         });
+        view()->composer('partials._nav', function ($view) {
+            $view->with('socialMedias', \App\SocialMedia::all());
+        });
+        view()->composer('partials._footer', function ($view) {
+            $view->with('socialMedias', \App\SocialMedia::all());
+        });
     }
 
     /**

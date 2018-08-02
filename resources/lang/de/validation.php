@@ -120,6 +120,11 @@ return [
         'company_name' => 'Name der Firma',
         'phone' => 'Telefon',
         'message' => 'Nachricht',
+        'c_name' => 'Firma',
+        'c_address' => 'Adresse',
+        'c_phone' => 'Telefon',
+        'c_email' => 'Email',
+        'url.*' => 'Webseite',
     ],
 
 ];

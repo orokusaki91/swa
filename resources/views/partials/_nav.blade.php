@@ -2,8 +2,9 @@
 <header>
 	<div class="container-fluid">
 		<div class="social text-right">
-			<a href="https://www.facebook.com" id="facebook" class="social-icon" title="Facebook"></a>
-			<a href="https://www.instagram.com" id="instagram" class="social-icon" title="Instagram"></a>
+			@foreach($socialMedias as $socialMedia)
+				<a href="{{ $socialMedia->url }}" id="{{ $socialMedia->name }}" class="social-icon" title="{{ $socialMedia->name }}" target="_blank"></a>
+			@endforeach
 		</div>
 		<div class="row align-items-center">
 			<div class="col-md-6 col-lg-5 px-md-0 px-lg-3 text-md-right text-lg-left">

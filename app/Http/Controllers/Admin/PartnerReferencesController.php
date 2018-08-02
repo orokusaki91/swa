@@ -55,7 +55,7 @@ class PartnerReferencesController extends Controller
         $image = $pageContent->images()->first();
 
         // remove old picture
-        if ($image) {
+        if ($image && $request->image_1) {
             $image->delete();
             if (Storage::has('public/uploads/' . $slug . '/' . $image->path)) {
                 // dd('removed');

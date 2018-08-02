@@ -2,8 +2,9 @@
 <footer id="footer" class="{{ Route::getCurrentRoute()->uri() == 'kontakt' ? 'contact-footer' : '' }}">
 	<div class="container">
 		<div class="social text-center">
-			<a href="https://www.facebook.com" id="facebook" class="social-icon" title="Facebook"></a>
-			<a href="https://www.instagram.com" id="instagram" class="social-icon" title="Instagram"></a>
+			@foreach($socialMedias as $socialMedia)
+				<a href="{{ $socialMedia->url }}" id="{{ $socialMedia->name }}" class="social-icon" title="{{ $socialMedia->name }}" target="_blank"></a>
+			@endforeach
 		</div>
 		<div class="links text-center text-uppercase">
 			<a href=" {{ url('impressum') }}" style="font-size: 12px;">Impressum</a>

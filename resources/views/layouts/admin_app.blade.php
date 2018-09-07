@@ -8,6 +8,7 @@
 <body onload="loader()">
 	<!-- Loader start -->
 	<div id="loader"></div>
+	<!-- Loader end -->
 
 	<!-- App start -->
 	<div id="app">

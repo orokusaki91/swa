@@ -18,7 +18,6 @@ $var = '../img/car-2.jpg';
 		<!-- Top-menu start -->
 		<div id="top-menu">
 			<!-- Language mobile start -->
-<!--
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="{{ asset('img/flag/de.png') }}" class="language" title="Deutsch" alt="img/flag/de.png" />
@@ -34,7 +33,6 @@ $var = '../img/car-2.jpg';
 					</a>
 				</div>
 			</li>
--->
 			<!-- Language mobile end -->
 			<!-- Side-nav icon start -->
 			<img class="side-nav-icon" src="{{ asset('img/side-menu.png') }}" onclick="openNav()" title="Side nav" alt="img/side-menu.png" />

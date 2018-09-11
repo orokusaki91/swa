@@ -1,4 +1,4 @@
-<!-- Meta tag start-->
+<!-- Meta tag start -->
 <meta charset="UTF-8" />
 <meta name="author" content="" />
 <meta name="description" content="" />
@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#ffffff" />
 <meta name="msapplication-navbutton-color" content="#ffffff" />
 <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-<!-- Meta tag end-->
+<!-- Meta tag end -->
 <title>S.W.A. Security | @yield('title')</title>
 <!-- Favicon start -->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
